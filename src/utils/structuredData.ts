@@ -163,47 +163,50 @@ export const generateOrganizationStructuredData = (language: 'id' | 'en' = 'id')
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Lenggah",
-    alternateName: isEnglish ? "Lenggah Custom Furniture" : "Lenggah Furnitur Kustom",
-    description: isEnglish 
+    alternateName: isEnglish
+      ? "Lenggah Custom Furniture"
+      : "Lenggah Furnitur Kustom",
+    description: isEnglish
       ? "Premium custom furniture and interior design services in Jakarta, Indonesia"
       : "Layanan furnitur kustom dan desain interior premium di Jakarta, Indonesia",
     url: "https://lenggah.com",
     logo: "https://lenggah.com/logo.png",
-    sameAs: [
-      "https://instagram.com/lenggah",
-      "https://facebook.com/lenggah"
-    ],
+    sameAs: ["https://instagram.com/lenggah", "https://facebook.com/lenggah"],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Jl. Kebon Jeruk Raya No. 123",
-      addressLocality: "Jakarta Barat",
+      streetAddress: "Jl. Munggang Gg. H. Guntong RT 10/RW 4, Kel. Balekambang",
+      addressLocality: "Jakarta Timur",
       addressRegion: "DKI Jakarta",
-      postalCode: "11530",
-      addressCountry: "ID"
+      postalCode: "13530",
+      addressCountry: "ID",
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+62-21-5555-5555",
+      telephone: "+62 813-8628-8099",
       contactType: isEnglish ? "customer service" : "layanan pelanggan",
-      availableLanguage: ["Indonesian", "English"]
+      availableLanguage: ["Indonesian", "English"],
     },
     foundingDate: "2020",
     numberOfEmployees: "10-50",
     priceRange: "$$-$$$",
     areaServed: {
       "@type": "Place",
-      name: isEnglish ? "Jakarta and surrounding areas" : "Jakarta dan sekitarnya"
+      name: isEnglish
+        ? "Jakarta and surrounding areas"
+        : "Jakarta dan sekitarnya",
     },
     makesOffer: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: isEnglish ? "Custom Furniture Design" : "Desain Furnitur Kustom",
-          description: isEnglish 
+          name: isEnglish
+            ? "Custom Furniture Design"
+            : "Desain Furnitur Kustom",
+          description: isEnglish
             ? "Bespoke furniture crafted to your exact specifications"
-            : "Furnitur khusus yang dibuat sesuai spesifikasi Anda"
-        }
+            : "Furnitur khusus yang dibuat sesuai spesifikasi Anda",
+        },
       },
       {
         "@type": "Offer",
@@ -212,9 +215,9 @@ export const generateOrganizationStructuredData = (language: 'id' | 'en' = 'id')
           name: isEnglish ? "Interior Design" : "Desain Interior",
           description: isEnglish
             ? "Complete interior design solutions for homes and offices"
-            : "Solusi desain interior lengkap untuk rumah dan kantor"
-        }
-      }
-    ]
+            : "Solusi desain interior lengkap untuk rumah dan kantor",
+        },
+      },
+    ],
   };
 };

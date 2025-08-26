@@ -272,8 +272,8 @@ ${t({
                     </h3>
                     <p className="text-body-small text-text-charcoal/70">
                       {t({
-                        id: "Jl. Kebon Jeruk Raya No. 123, Jakarta Barat 11530",
-                        en: "Jl. Kebon Jeruk Raya No. 123, West Jakarta 11530",
+                        id: "Jl. Munggang Gg. H. Guntong RT 10/RW 4, Kel. Balekambang, Jakarta Timur 13530",
+                        en: "Jl. Munggang Gg. H. Guntong RT 10/RW 4, Kel. Balekambang, East Jakarta 13530",
                       })}
                     </p>
                     <p className="text-body-small text-accent-forest mt-1">
