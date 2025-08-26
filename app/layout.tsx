@@ -82,6 +82,13 @@ export const metadata = {
     ],
   },
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "https://lenggah.com",
+    languages: {
+      'id': 'https://lenggah.com',
+      'en': 'https://lenggah.com/en',
+    },
+  },
   verification: {
     google: "your-google-verification-code",
     // yandex: 'your-yandex-verification-code',

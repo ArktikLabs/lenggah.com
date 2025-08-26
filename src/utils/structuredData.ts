@@ -2,19 +2,24 @@ import { PortfolioItem } from "../types";
 
 // Portfolio structured data generator
 export const generatePortfolioStructuredData = (
-  portfolioItems: PortfolioItem[]
+  portfolioItems: PortfolioItem[],
+  language: 'id' | 'en' = 'id'
 ) => {
+  const isEnglish = language === 'en';
+  
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Portfolio Lenggah",
-    description: "Koleksi proyek furnitur dan interior design kustom Lenggah",
+    name: isEnglish ? "Lenggah Portfolio" : "Portfolio Lenggah",
+    description: isEnglish 
+      ? "Collection of Lenggah's custom furniture and interior design projects"
+      : "Koleksi proyek furnitur dan interior design kustom Lenggah",
     numberOfItems: portfolioItems.length,
     itemListElement: portfolioItems.map((item, index) => ({
       "@type": "CreativeWork",
       position: index + 1,
-      name: item.title.id,
-      description: `${item.title.id} - ${item.materials.id}`,
+      name: isEnglish ? item.title.en : item.title.id,
+      description: `${isEnglish ? item.title.en : item.title.id} - ${isEnglish ? item.materials.en : item.materials.id}`,
       image: item.image,
       creator: {
         "@type": "Organization",
@@ -29,13 +34,16 @@ export const generatePortfolioStructuredData = (
 };
 
 // Service structured data generator
-export const generateServiceStructuredData = () => {
+export const generateServiceStructuredData = (language: 'id' | 'en' = 'id') => {
+  const isEnglish = language === 'en';
+  
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Furnitur & Desain Interior Kustom",
-    description:
-      "Layanan lengkap furnitur dan desain interior kustom dari konsep hingga pemasangan",
+    name: isEnglish ? "Custom Furniture & Interior Design" : "Furnitur & Desain Interior Kustom",
+    description: isEnglish
+      ? "Complete custom furniture and interior design services from concept to installation"
+      : "Layanan lengkap furnitur dan desain interior kustom dari konsep hingga pemasangan",
     provider: {
       "@type": "Organization",
       name: "Lenggah Studio",
@@ -128,133 +136,85 @@ export const generateServiceStructuredData = () => {
 
 // FAQ structured data generator
 export const generateFAQStructuredData = (
-  faqs: Array<{ question: { id: string }; answer: { id: string } }>
+  faqs: Array<{ question: { id: string; en: string }; answer: { id: string; en: string } }>,
+  language: 'id' | 'en' = 'id'
 ) => {
+  const isEnglish = language === 'en';
+  
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
-      name: faq.question.id,
+      name: isEnglish ? faq.question.en : faq.question.id,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer.id,
+        text: isEnglish ? faq.answer.en : faq.answer.id,
       },
     })),
   };
 };
 
 // Organization structured data with enhanced business info
-export const generateOrganizationStructuredData = () => {
+export const generateOrganizationStructuredData = (language: 'id' | 'en' = 'id') => {
+  const isEnglish = language === 'en';
+  
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Lenggah",
-    alternateName: "Lenggah Studio",
-    description:
-      "Studio Lenggah menghadirkan furnitur & interior kustom berfokus pada kenyamanan. Dari konsep hingga pemasangan, material terkurasi & garansi.",
+    alternateName: isEnglish ? "Lenggah Custom Furniture" : "Lenggah Furnitur Kustom",
+    description: isEnglish 
+      ? "Premium custom furniture and interior design services in Jakarta, Indonesia"
+      : "Layanan furnitur kustom dan desain interior premium di Jakarta, Indonesia",
     url: "https://lenggah.com",
-    logo: "https://lenggah.com/favicon.svg",
-    image:
-      "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    telephone: "+62 813-8628-8099",
-    foundingDate: "2020",
+    logo: "https://lenggah.com/logo.png",
+    sameAs: [
+      "https://instagram.com/lenggah",
+      "https://facebook.com/lenggah"
+    ],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Jl. Munggang Gg. H. Guntong RT 10/RW 4, Kel. Balekambang",
-      addressLocality: "Kramat Jati",
-      addressRegion: "Jakarta Timur",
-      postalCode: "13530",
-      addressCountry: "ID",
+      streetAddress: "Jl. Kebon Jeruk Raya No. 123",
+      addressLocality: "Jakarta Barat",
+      addressRegion: "DKI Jakarta",
+      postalCode: "11530",
+      addressCountry: "ID"
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "-6.2791259",
-      longitude: "106.849637",
-    },
-    sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+62 813-8628-8099",
-      contactType: "customer service",
-      availableLanguage: ["Indonesian", "English"],
+      telephone: "+62-21-5555-5555",
+      contactType: isEnglish ? "customer service" : "layanan pelanggan",
+      availableLanguage: ["Indonesian", "English"]
     },
-    serviceType: [
-      "Custom Furniture",
-      "Interior Design",
-      "Kitchen Set",
-      "Wardrobe",
-      "Living Room Furniture",
-    ],
-    areaServed: [
-      {
-        "@type": "Country",
-        name: "Indonesia",
-      },
-      {
-        "@type": "Place",
-        name: "Jakarta",
-      },
-      {
-        "@type": "Place",
-        name: "Surabaya",
-      },
-      {
-        "@type": "Place",
-        name: "Bandung",
-      },
-      {
-        "@type": "Place",
-        name: "Medan",
-      },
-      {
-        "@type": "Place",
-        name: "Semarang",
-      },
-      {
-        "@type": "Place",
-        name: "Makassar",
-      },
-      {
-        "@type": "Place",
-        name: "Yogyakarta",
-      },
-      {
-        "@type": "Place",
-        name: "Denpasar",
-      },
-      {
-        "@type": "Place",
-        name: "Batam",
-      },
-    ],
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Furniture & Interior Design Services",
-      itemListElement: [
-        {
-          "@type": "OfferCatalog",
-          name: "Custom Furniture",
-          itemListElement: [
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Product",
-                name: "Kitchen Set Custom",
-                category: "Furniture",
-              },
-            },
-            {
-              "@type": "Offer",
-              itemOffered: {
-                "@type": "Product",
-                name: "Wardrobe Custom",
-                category: "Furniture",
-              },
-            },
-          ],
-        },
-      ],
+    foundingDate: "2020",
+    numberOfEmployees: "10-50",
+    priceRange: "$$-$$$",
+    areaServed: {
+      "@type": "Place",
+      name: isEnglish ? "Jakarta and surrounding areas" : "Jakarta dan sekitarnya"
     },
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: isEnglish ? "Custom Furniture Design" : "Desain Furnitur Kustom",
+          description: isEnglish 
+            ? "Bespoke furniture crafted to your exact specifications"
+            : "Furnitur khusus yang dibuat sesuai spesifikasi Anda"
+        }
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: isEnglish ? "Interior Design" : "Desain Interior",
+          description: isEnglish
+            ? "Complete interior design solutions for homes and offices"
+            : "Solusi desain interior lengkap untuk rumah dan kantor"
+        }
+      }
+    ]
   };
 };
