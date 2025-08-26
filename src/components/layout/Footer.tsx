@@ -145,14 +145,27 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-tertiary-earth/30 mt-12 pt-8 text-center">
-          <p className="text-primary-ivory/80">
-            © {currentYear} Lenggah.{" "}
-            {t({
-              id: "Seluruh hak cipta dilindungi.",
-              en: "All rights reserved.",
-            })}
-          </p>
+        <div className="border-t border-tertiary-earth/30 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-primary-ivory/80 text-center md:text-left">
+              © {currentYear} Lenggah.{" "}
+              {t({
+                id: "Seluruh hak cipta dilindungi.",
+                en: "All rights reserved.",
+              })}
+            </p>
+            <div className="flex items-center space-x-2 text-primary-ivory/60 text-sm">
+              <span>{t({ id: "Dikembangkan oleh", en: "Developed by" })}</span>
+              <a
+                href="https://arktik.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-forest hover:text-accent-forest/80 transition-colors font-medium"
+              >
+                Arktik
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
