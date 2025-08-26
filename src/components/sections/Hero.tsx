@@ -5,6 +5,7 @@ import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 import { useLanguage } from '../../hooks/useLanguage';
+import { heroData } from "../../data/content";
 
 export const Hero: React.FC = () => {
   const { t } = useLanguage();
@@ -48,31 +49,20 @@ export const Hero: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="mb-8 flex justify-center">
-            <Badge variant="secondary">
-              {t({
-                id: "Kustom • Fungsional • Tahan Lama",
-                en: "Custom • Functional • Durable",
-              })}
-            </Badge>
+            <Badge variant="secondary">{t(heroData.badge)}</Badge>
           </div>
 
           {/* Headline */}
           <h1 className="text-display text-white mb-6">
-            {t({
-              id: "Rancang Furnitur & Interior yang Mengajak Anda",
-              en: "Craft Furniture & Interiors That Invite You to",
-            })}
+            {t(heroData.title)}
             <span className="block text-primary-ivory mt-2">
-              {t({ id: '"Lenggah"', en: '"Lenggah" (Sit)' })}
+              {t(heroData.subtitle)}
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-body-large text-gray-200 mb-10 max-w-3xl mx-auto">
-            {t({
-              id: "Kenyamanan yang terasa, estetika yang bertahan. Kustom dari ide hingga pemasangan.",
-              en: "Comfort you can feel, aesthetics that last. Custom from concept to installation.",
-            })}
+            {t(heroData.description)}
           </p>
 
           {/* CTA Buttons */}
@@ -84,7 +74,7 @@ export const Hero: React.FC = () => {
               onClick={() => scrollToSection("#contact")}
               className="w-full sm:w-auto"
             >
-              {t({ id: "Mulai Konsultasi", en: "Start Consultation" })}
+              {t(heroData.cta.primary)}
             </Button>
             <Button
               variant="outline"
@@ -93,19 +83,14 @@ export const Hero: React.FC = () => {
               onClick={() => scrollToSection("#portfolio")}
               className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-text-charcoal"
             >
-              {t({ id: "Lihat Portofolio", en: "View Portfolio" })}
+              {t(heroData.cta.secondary)}
             </Button>
           </div>
         </div>
 
         {/* Philosophy Section */}
         <div className="mt-16 p-6 bg-white/10 backdrop-blur-sm rounded-2xl max-w-2xl mx-auto">
-          <p className="text-body-large text-white">
-            {t({
-              id: 'Dalam bahasa Jawa, lenggah berarti "duduk". Kami merancang agar tubuh, pikiran, dan ruang dapat "lenggah"—tenang, nyaman, dan berkelanjutan.',
-              en: 'In Javanese, lenggah means "to sit". We design so body, mind, and space can "lenggah"—calm, comfortable, and enduring.',
-            })}
-          </p>
+          <p className="text-body-large text-white">{t(heroData.philosophy)}</p>
         </div>
 
         {/* Scroll Indicator */}

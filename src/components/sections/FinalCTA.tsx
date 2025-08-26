@@ -96,15 +96,15 @@ export const FinalCTA: React.FC = () => {
       <div className="relative z-10 spacing-container text-center">
         <h2 className="text-display text-white mb-6">
           {t({
-            id: 'Siap "Lenggah" di Ruang yang Nyaman?',
-            en: 'Ready to "Lenggah" in a Comfortable Space?',
+            id: "Waktunya Wujudkan Rumah Impian Anda",
+            en: "Time to Realize Your Dream Home",
           })}
         </h2>
 
         <p className="text-body-large text-gray-200 mb-10 max-w-2xl mx-auto">
           {t({
-            id: "Mulai konsultasi gratis hari ini dan wujudkan ruang impian Anda bersama tim ahli kami.",
-            en: "Start a free consultation today and realize your dream space with our expert team.",
+            id: "Jangan biarkan rumah impian hanya tinggal impian. Mulai konsultasi gratis hari ini dan rasakan perbedaan kualitas Lenggah—dari konsep hingga pemasangan sempurna.",
+            en: "Don't let your dream home remain just a dream. Start a free consultation today and experience the Lenggah quality difference—from concept to perfect installation.",
           })}
         </p>
 
@@ -115,7 +115,7 @@ export const FinalCTA: React.FC = () => {
           onClick={scrollToContact}
           className="shadow-xl"
         >
-          {t({ id: "Konsultasi Gratis", en: "Free Consultation" })}
+          {t({ id: "Konsultasi Gratis Sekarang", en: "Free Consultation Now" })}
         </Button>
 
         {/* Decorative elements */}

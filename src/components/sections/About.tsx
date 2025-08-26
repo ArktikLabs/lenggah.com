@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useLanguage } from '../../hooks/useLanguage';
+import { aboutData } from "../../data/content";
 
 export const About: React.FC = () => {
   const { t } = useLanguage();
@@ -9,30 +10,40 @@ export const About: React.FC = () => {
   return (
     <section id="about" className="spacing-section bg-primary-ivory">
       <div className="spacing-container">
+        <div className="text-center mb-16">
+          <h2 className="text-heading-1 text-text-charcoal mb-6">
+            {t(aboutData.title)}
+          </h2>
+          <p className="text-body-large text-text-charcoal/70 max-w-3xl mx-auto">
+            {t(aboutData.subtitle)}
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-heading-1 text-text-charcoal mb-8">
-              {t({ id: "Tentang Lenggah", en: "About Lenggah" })}
-            </h2>
             <div className="space-y-6 text-body-large text-text-charcoal/80">
-              <p>
-                {t({
-                  id: "Lenggah adalah studio furnitur & interior yang berangkat dari filosofi duduk—menciptakan ruang yang menenangkan, mendukung aktivitas, dan awet digunakan.",
-                  en: "Lenggah is a furniture & interior studio that stems from the philosophy of sitting—creating spaces that are calming, support activities, and are durable to use.",
-                })}
-              </p>
-              <p>
-                {t({
-                  id: "Dengan fokus pada material alami pilihan dan desain yang mengutamakan fungsi, kami menghadirkan solusi interior yang tidak hanya indah dipandang, tetapi juga nyaman untuk dihuni sehari-hari.",
-                  en: "With a focus on selected natural materials and design that prioritizes function, we present interior solutions that are not only beautiful to look at, but also comfortable for daily living.",
-                })}
-              </p>
-              <p>
-                {t({
-                  id: "Setiap proyek kami tangani dengan perhatian detail yang tinggi, mulai dari pemilihan kayu, proses produksi, hingga finishing yang ramah lingkungan.",
-                  en: "We handle every project with high attention to detail, from wood selection, production process, to eco-friendly finishing.",
-                })}
-              </p>
+              {aboutData.description.id.map((paragraph, index) => (
+                <p key={index}>
+                  {t({
+                    id: paragraph,
+                    en: aboutData.description.en[index],
+                  })}
+                </p>
+              ))}
+            </div>
+
+            {/* Stats */}
+            <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-8">
+              {aboutData.stats.map((stat, index) => (
+                <div key={index} className="text-center">
+                  <div className="text-3xl font-bold text-accent-forest mb-2">
+                    {stat.number}
+                  </div>
+                  <div className="text-sm text-text-charcoal/70">
+                    {t(stat.label)}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className="relative">

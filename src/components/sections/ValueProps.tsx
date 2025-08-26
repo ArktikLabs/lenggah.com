@@ -10,24 +10,48 @@ export const ValueProps: React.FC = () => {
   const valueProps = [
     {
       icon: CheckCircle,
-      title: { id: 'Kustom Penuh', en: 'Fully Custom' },
-      description: { id: 'Ukuran, material, dan detail sesuai kebutuhan.', en: 'Dimensions, materials, and details tailored to your needs.' }
+      title: {
+        id: "Kustom Sesuai Kepribadian Anda",
+        en: "Custom to Match Your Personality",
+      },
+      description: {
+        id: "Setiap detail disesuaikan dengan gaya hidup dan kebutuhan unik keluarga Anda.",
+        en: "Every detail is tailored to your unique lifestyle and family needs.",
+      },
     },
     {
       icon: Leaf,
-      title: { id: 'Material Telah Kurasi', en: 'Curated Materials' },
-      description: { id: 'Kayu solid, finishing ramah lingkungan.', en: 'Solid wood, eco-friendly finishing.' }
+      title: {
+        id: "Material Premium Ramah Lingkungan",
+        en: "Premium Eco-Friendly Materials",
+      },
+      description: {
+        id: "Kayu solid berkualitas tinggi dengan finishing yang aman untuk keluarga dan lingkungan.",
+        en: "High-quality solid wood with finishing that's safe for family and environment.",
+      },
     },
     {
       icon: Wrench,
-      title: { id: 'Desain Fungsional', en: 'Functional Design' },
-      description: { id: 'Indah dipandang, nyaman digunakan.', en: 'Beautiful to look at, comfortable to use.' }
+      title: {
+        id: "Desain yang Berfungsi dengan Indah",
+        en: "Beautifully Functional Design",
+      },
+      description: {
+        id: "Tidak hanya cantik dipandang, tetapi juga meningkatkan kenyamanan hidup sehari-hari.",
+        en: "Not only beautiful to look at, but also enhances daily life comfort.",
+      },
     },
     {
       icon: Clock,
-      title: { id: 'Produksi & Pemasangan Rapi', en: 'Neat Production & Installation' },
-      description: { id: 'Tepat waktu, garansi pengerjaan.', en: 'On time, workmanship guarantee.' }
-    }
+      title: {
+        id: "Proses Transparan & Tepat Waktu",
+        en: "Transparent & Timely Process",
+      },
+      description: {
+        id: "Komitmen waktu yang jelas, update progress rutin, dan garansi kepuasan pelanggan.",
+        en: "Clear time commitment, routine progress updates, and customer satisfaction guarantee.",
+      },
+    },
   ];
 
   return (

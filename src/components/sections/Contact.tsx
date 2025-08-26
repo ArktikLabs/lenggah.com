@@ -92,12 +92,15 @@ export const Contact: React.FC = () => {
       <div className="spacing-container">
         <div className="text-center mb-16">
           <h2 className="text-heading-1 text-text-charcoal mb-6">
-            {t({ id: "Hubungi Kami", en: "Contact Us" })}
+            {t({
+              id: "Mari Mulai Konsultasi Gratis",
+              en: "Let's Start Your Free Consultation",
+            })}
           </h2>
           <p className="text-body-large text-text-charcoal/70 max-w-3xl mx-auto">
             {t({
-              id: "Siap memulai proyek impian Anda? Hubungi kami untuk konsultasi gratis.",
-              en: "Ready to start your dream project? Contact us for a free consultation.",
+              id: "Ceritakan impian ruang Anda kepada kami. Tim ahli Lenggah siap membantu mewujudkannya dengan kualitas terbaik dan harga yang transparan.",
+              en: "Tell us about your space dreams. Lenggah's expert team is ready to help make it happen with the best quality and transparent pricing.",
             })}
           </p>
         </div>

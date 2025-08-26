@@ -1,4 +1,10 @@
-import { PortfolioItem, ServiceItem, ProcessStep, Testimonial, FAQ } from '../types';
+import {
+  PortfolioItem,
+  ServiceItem,
+  ProcessStep,
+  Testimonial,
+  FAQ,
+} from "../types";
 
 export const portfolioItems: PortfolioItem[] = [
   {
@@ -95,116 +101,116 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const services: ServiceItem[] = [
   {
-    id: '1',
+    id: "1",
     title: {
-      id: 'Desain Interior Hunian',
-      en: 'Residential Interior Design'
+      id: "Desain Interior Hunian yang Menenangkan",
+      en: "Residential Interior that Brings Peace",
     },
     description: {
-      id: 'Apartemen, rumah, dan ruang pribadi yang nyaman dan fungsional',
-      en: 'Apartments, homes, and private spaces that are comfortable and functional'
+      id: "Rumah yang benar-benar terasa seperti rumah—tempat tubuh dan pikiran Anda bisa beristirahat",
+      en: "Homes that truly feel like home—where your body and mind can rest",
     },
-    icon: 'Home'
+    icon: "Home",
   },
   {
-    id: '2',
+    id: "2",
     title: {
-      id: 'Desain & Pembuatan Furnitur Kustom',
-      en: 'Custom Furniture Design & Manufacturing'
+      id: "Furnitur Kustom yang Mencerminkan Anda",
+      en: "Custom Furniture that Reflects You",
     },
     description: {
-      id: 'Furnitur sesuai kebutuhan dengan material pilihan berkualitas tinggi',
-      en: 'Furniture tailored to your needs with high-quality selected materials'
+      id: "Setiap kurva dan tekstur dirancang khusus untuk gaya hidup dan kepribadian unik Anda",
+      en: "Every curve and texture designed specifically for your unique lifestyle and personality",
     },
-    icon: 'Armchair'
+    icon: "Armchair",
   },
   {
-    id: '3',
+    id: "3",
     title: {
-      id: 'Kitchen Set & Wardrobe',
-      en: 'Kitchen Set & Wardrobe'
+      id: "Kitchen Set & Wardrobe Impian",
+      en: "Dream Kitchen Set & Wardrobe",
     },
     description: {
-      id: 'Solusi penyimpanan cerdas dengan desain yang selaras dengan ruang',
-      en: 'Smart storage solutions with designs that harmonize with your space'
+      id: "Ruang masak yang menginspirasi kreativitas dan penyimpanan yang membuat hidup lebih teratur",
+      en: "Cooking spaces that inspire creativity and storage that makes life more organized",
     },
-    icon: 'ChefHat'
+    icon: "ChefHat",
   },
   {
-    id: '4',
+    id: "4",
     title: {
-      id: 'Renovasi Ringan & Styling',
-      en: 'Light Renovation & Styling'
+      id: "Transformasi Ruang Tanpa Renovasi Besar",
+      en: "Space Transformation Without Major Renovation",
     },
     description: {
-      id: 'Penyegaran ruang dengan perubahan minimal namun dampak maksimal',
-      en: 'Space refreshing with minimal changes but maximum impact'
+      id: "Perubahan dramatis dengan sentuhan yang tepat—hemat biaya, dampak maksimal",
+      en: "Dramatic changes with the right touch—cost-effective, maximum impact",
     },
-    icon: 'Paintbrush'
-  }
+    icon: "Paintbrush",
+  },
 ];
 
 export const processSteps: ProcessStep[] = [
   {
-    id: '1',
+    id: "1",
     title: {
-      id: 'Konsultasi & Brief',
-      en: 'Consultation & Brief'
+      id: "Konsultasi Mendalam & Pemahaman Visi",
+      en: "In-Depth Consultation & Vision Understanding",
     },
     description: {
-      id: 'Diskusi kebutuhan, gaya, budget, dan timeline proyek Anda',
-      en: 'Discuss your needs, style, budget, and project timeline'
+      id: "Kami dengarkan impian Anda dengan seksama—gaya hidup, preferensi, dan anggaran yang realistis",
+      en: "We listen to your dreams carefully—lifestyle, preferences, and realistic budget",
     },
-    icon: 'MessageCircle'
+    icon: "MessageCircle",
   },
   {
-    id: '2',
+    id: "2",
     title: {
-      id: 'Konsep & Moodboard',
-      en: 'Concept & Moodboard'
+      id: "Konsep Kreatif & Visualisasi Nyata",
+      en: "Creative Concept & Real Visualization",
     },
     description: {
-      id: 'Pengembangan konsep desain dengan referensi visual yang jelas',
-      en: 'Design concept development with clear visual references'
+      id: "Ide Anda menjadi gambaran visual yang jelas—Anda bisa merasakan hasilnya sebelum dibuat",
+      en: "Your ideas become clear visual representations—you can feel the result before it's made",
     },
-    icon: 'Palette'
+    icon: "Palette",
   },
   {
-    id: '3',
+    id: "3",
     title: {
-      id: 'Desain Teknis & RAB',
-      en: 'Technical Drawings & Quotation'
+      id: "Desain Teknis & Transparansi Biaya",
+      en: "Technical Design & Cost Transparency",
     },
     description: {
-      id: 'Gambar kerja detail dan rincian anggaran biaya yang transparan',
-      en: 'Detailed working drawings and transparent cost breakdown'
+      id: "Gambar kerja detail dan breakdown biaya yang jujur—tidak ada biaya tersembunyi",
+      en: "Detailed working drawings and honest cost breakdown—no hidden fees",
     },
-    icon: 'Ruler'
+    icon: "Ruler",
   },
   {
-    id: '4',
+    id: "4",
     title: {
-      id: 'Produksi',
-      en: 'Production'
+      id: "Produksi dengan Standar Kualitas Tinggi",
+      en: "Production with High Quality Standards",
     },
     description: {
-      id: 'Proses pembuatan dengan kontrol kualitas ketat dan update berkala',
-      en: 'Manufacturing process with strict quality control and regular updates'
+      id: "Proses pembuatan yang teliti dengan update progress rutin—Anda selalu tahu perkembangannya",
+      en: "Meticulous manufacturing process with routine progress updates—you always know the development",
     },
-    icon: 'Hammer'
+    icon: "Hammer",
   },
   {
-    id: '5',
+    id: "5",
     title: {
-      id: 'Pemasangan & Garansi',
-      en: 'Installation & Warranty'
+      id: "Pemasangan Sempurna & Jaminan Kepuasan",
+      en: "Perfect Installation & Satisfaction Guarantee",
     },
     description: {
-      id: 'Instalasi profesional dengan garansi kualitas pengerjaan',
-      en: 'Professional installation with workmanship quality guarantee'
+      id: "Instalasi yang rapi dan garansi 1 tahun—Anda puas atau kami perbaiki",
+      en: "Neat installation and 1-year warranty—you're satisfied or we fix it",
     },
-    icon: 'CheckCircle'
-  }
+    icon: "CheckCircle",
+  },
 ];
 
 export const testimonials: Testimonial[] = [
@@ -213,8 +219,8 @@ export const testimonials: Testimonial[] = [
     name: "Sari Wulandari",
     location: "Jakarta Selatan",
     quote: {
-      id: "Tim Lenggah benar-benar memahami konsep ruang yang nyaman. Kitchen set kami tidak hanya indah tapi juga sangat fungsional untuk kebutuhan keluarga.",
-      en: "The Lenggah team truly understands the concept of comfortable space. Our kitchen set is not only beautiful but also very functional for family needs.",
+      id: "Tim Lenggah benar-benar memahami apa yang kami inginkan. Kitchen set kami tidak hanya cantik, tapi juga sangat fungsional—memasak jadi lebih menyenangkan dan keluarga semakin sering berkumpul.",
+      en: "The Lenggah team truly understands what we wanted. Our kitchen set is not only beautiful but also very functional—cooking has become more enjoyable and the family gathers more often.",
     },
     rating: 5,
   },
@@ -223,8 +229,8 @@ export const testimonials: Testimonial[] = [
     name: "Budi Santoso",
     location: "Jakarta Timur",
     quote: {
-      id: "Kualitas furnitur custom dari Lenggah luar biasa. Material kayu pilihan dan finishing yang rapi, benar-benar investment jangka panjang.",
-      en: "The quality of custom furniture from Lenggah is extraordinary. Selected wood materials and neat finishing, truly a long-term investment.",
+      id: "Investasi terbaik yang pernah kami lakukan! Kualitas furnitur dari Lenggah luar biasa—material kayu pilihan, finishing rapi, dan sudah 2 tahun masih seperti baru. Anak-anak juga suka dengan wardrobe barunya.",
+      en: "The best investment we've ever made! The quality of Lenggah furniture is extraordinary—selected wood materials, neat finishing, and after 2 years it still looks new. The kids also love their new wardrobe.",
     },
     rating: 5,
   },
@@ -233,8 +239,8 @@ export const testimonials: Testimonial[] = [
     name: "Maya Indira",
     location: "Tangerang",
     quote: {
-      id: "Proses dari konsultasi hingga pemasangan sangat profesional. Tim selalu responsif dan hasil akhir melebihi ekspektasi kami.",
-      en: "The process from consultation to installation is very professional. The team is always responsive and the final result exceeded our expectations.",
+      id: "Dari awal konsultasi hingga instalasi, semuanya sangat profesional dan komunikatif. Yang paling kami suka, mereka selalu update progress dan hasil akhirnya bahkan melebihi ekspektasi. Rumah jadi terasa lebih nyaman!",
+      en: "From initial consultation to installation, everything was very professional and communicative. What we love most is that they always update progress and the final result even exceeded expectations. The house feels so much more comfortable!",
     },
     rating: 5,
   },
@@ -244,56 +250,142 @@ export const faqs: FAQ[] = [
   {
     id: "1",
     question: {
-      id: "Berapa estimasi waktu produksi furnitur custom?",
-      en: "What is the estimated production time for custom furniture?",
+      id: "Berapa lama waktu yang dibutuhkan untuk furnitur custom saya jadi?",
+      en: "How long does it take for my custom furniture to be completed?",
     },
     answer: {
-      id: "Waktu produksi bervariasi tergantung kompleksitas dan ukuran proyek, umumnya 2-6 minggu setelah desain final disetujui. Kami akan memberikan timeline yang jelas di awal proyek.",
-      en: "Production time varies depending on complexity and project size, typically 2-6 weeks after final design approval. We will provide a clear timeline at the beginning of the project.",
+      id: "Waktu produksi umumnya 2-6 minggu tergantung kompleksitas dan ukuran proyek. Kami akan memberikan timeline yang pasti sejak awal dan selalu update progress secara rutin, jadi Anda tidak perlu khawatir dengan ketidakpastian.",
+      en: "Production time is typically 2-6 weeks depending on complexity and project size. We will provide a definite timeline from the start and always update progress regularly, so you don't have to worry about uncertainty.",
     },
   },
   {
     id: "2",
     question: {
-      id: "Bahan kayu apa saja yang tersedia?",
-      en: "What wood materials are available?",
+      id: "Kayu apa saja yang tersedia dan bagaimana kualitasnya?",
+      en: "What wood types are available and how is the quality?",
     },
     answer: {
-      id: "Kami menyediakan berbagai kayu berkualitas seperti jati, mahoni, trembesi, sonokeling, dan pinus. Semua kayu telah melalui proses pengeringan yang tepat dan finishing ramah lingkungan.",
-      en: "We provide various quality woods such as teak, mahogany, trembesi, sonokeling, and pine. All wood has gone through proper drying processes and eco-friendly finishing.",
+      id: "Kami hanya menggunakan kayu berkualitas premium seperti jati, mahoni, trembesi, sonokeling, dan pinus yang sudah melalui proses pengeringan dan seleksi ketat. Semua kayu telah dirawat dengan finishing ramah lingkungan untuk memastikan daya tahan puluhan tahun.",
+      en: "We only use premium quality woods such as teak, mahogany, trembesi, sonokeling, and pine that have gone through strict drying and selection processes. All wood has been treated with eco-friendly finishing to ensure decades of durability.",
     },
   },
   {
     id: "3",
     question: {
-      id: "Apakah melayani proyek di luar Jakarta?",
-      en: "Do you serve projects outside Jakarta?",
+      id: "Apakah bisa melayani di luar Jakarta? Bagaimana dengan ongkos kirim?",
+      en: "Can you serve areas outside Jakarta? How about shipping costs?",
     },
     answer: {
-      id: "Ya, kami melayani area Jakarta dan sekitarnya termasuk Bogor, Depok, Tangerang, dan Bekasi (Jabodetabek). Untuk area lain, silakan konsultasikan terlebih dahulu untuk memastikan kelayakan dan biaya tambahan yang diperlukan.",
-      en: "Yes, we serve Jakarta and surrounding areas including Bogor, Depok, Tangerang, and Bekasi (Jabodetabek). For other areas, please consult first to ensure feasibility and additional costs required.",
+      id: "Ya, kami melayani seluruh Jabodetabek dengan gratis ongkir untuk pembelian minimal 20 juta. Untuk area lain di Indonesia, silakan konsultasi dulu untuk memastikan kelayakan dan transparansi biaya tambahan yang diperlukan.",
+      en: "Yes, we serve the entire Jabodetabek area with free shipping for minimum purchases of 20 million. For other areas in Indonesia, please consult first to ensure feasibility and transparency of additional costs required.",
     },
   },
   {
     id: "4",
     question: {
-      id: "Bagaimana sistem pembayaran?",
-      en: "How is the payment system?",
+      id: "Bagaimana sistem pembayaran? Apakah bisa dicicil?",
+      en: "How is the payment system? Can it be paid in installments?",
     },
     answer: {
-      id: "Kami menerapkan sistem pembayaran bertahap: 50% DP setelah kontrak, 30% saat produksi dimulai, dan 20% setelah pemasangan selesai. Pembayaran dapat melalui transfer bank atau cash.",
-      en: "We apply a staged payment system: 50% down payment after contract, 30% when production starts, and 20% after installation is complete. Payment can be via bank transfer or cash.",
+      id: "Sistem pembayaran sangat fleksibel: 50% DP setelah kontrak, 30% saat produksi dimulai, dan 20% setelah instalasi selesai. Kami juga menerima pembayaran melalui transfer bank, tunai, bahkan kartu kredit untuk kemudahan Anda.",
+      en: "The payment system is very flexible: 50% down payment after contract, 30% when production starts, and 20% after installation is complete. We also accept payment via bank transfer, cash, even credit cards for your convenience.",
     },
   },
   {
     id: "5",
     question: {
-      id: "Apakah ada garansi untuk produk dan jasa?",
-      en: "Is there a warranty for products and services?",
+      id: "Apa yang terjadi jika ada masalah setelah pemasangan?",
+      en: "What happens if there are problems after installation?",
     },
     answer: {
-      id: "Ya, kami memberikan garansi 1 tahun untuk kualitas pengerjaan dan konstruksi. Garansi tidak termasuk kerusakan akibat pemakaian normal atau perawatan yang tidak tepat.",
-      en: "Yes, we provide a 1-year warranty for workmanship quality and construction. Warranty does not include damage due to normal use or improper maintenance.",
+      id: "Kami memberikan garansi penuh 1 tahun untuk kualitas pengerjaan dan konstruksi. Jika ada masalah, cukup hubungi kami dan team akan datang untuk perbaikan gratis. Kepuasan Anda adalah prioritas utama kami.",
+      en: "We provide a full 1-year warranty for workmanship quality and construction. If there are any problems, just contact us and our team will come for free repairs. Your satisfaction is our top priority.",
     },
   },
 ];
+
+export const heroData = {
+  title: {
+    id: "Rancang Furnitur & Interior yang Mengajak Anda",
+    en: "Craft Furniture & Interiors That Invite You to",
+  },
+  subtitle: {
+    id: '"Lenggah"',
+    en: '"Lenggah" (Sit)',
+  },
+  description: {
+    id: "Rasakan kenyamanan yang sesungguhnya, estetika yang tahan waktu. Setiap detail dirancang khusus untuk gaya hidup Anda—dari konsep hingga pemasangan sempurna.",
+    en: "Experience true comfort, timeless aesthetics. Every detail is custom-designed for your lifestyle—from concept to perfect installation.",
+  },
+  badge: {
+    id: "Kustom • Fungsional • Tahan Lama",
+    en: "Custom • Functional • Durable",
+  },
+  philosophy: {
+    id: 'Dalam bahasa Jawa, lenggah berarti "duduk". Kami merancang agar tubuh, pikiran, dan ruang dapat "lenggah"—tenang, nyaman, dan berkelanjutan.',
+    en: 'In Javanese, lenggah means "to sit". We design so body, mind, and space can "lenggah"—calm, comfortable, and enduring.',
+  },
+  cta: {
+    primary: {
+      id: "Mulai Konsultasi Gratis",
+      en: "Start Free Consultation",
+    },
+    secondary: {
+      id: "Lihat Portofolio",
+      en: "View Portfolio",
+    },
+  },
+};
+
+export const aboutData = {
+  title: {
+    id: "Menghadirkan Rumah Impian dalam Setiap Detail",
+    en: "Bringing Dream Homes to Life in Every Detail",
+  },
+  subtitle: {
+    id: "Setiap ruang memiliki cerita. Kami membantu Anda menceritakannya.",
+    en: "Every space has a story. We help you tell yours.",
+  },
+  description: {
+    id: [
+      "Sejak 2019, Lenggah telah menjadi partner terpercaya bagi lebih dari 150 keluarga dalam mewujudkan rumah impian mereka. Kami memahami bahwa rumah bukan sekadar tempat tinggal—rumah adalah cerminan kepribadian, tempat bercerita, dan ruang untuk menciptakan kenangan indah.",
+      "Dengan tim designer berpengalaman dan craftsman yang ahli, kami menciptakan furnitur custom yang tidak hanya memukau secara visual, tetapi juga mencerminkan gaya hidup unik setiap klien. Setiap project adalah kolaborasi—kami mendengarkan visi Anda dan menghadirkannya dengan kualitas yang melampaui ekspektasi.",
+      'Kepercayaan Anda adalah aset terbesar kami. Dengan komitmen pada kualitas, ketepatan waktu, dan transparansi, kami bangga menjadi bagian dari perjalanan menciptakan rumah yang benar-benar terasa seperti "home".',
+    ],
+    en: [
+      "Since 2019, Lenggah has been a trusted partner for over 150 families in realizing their dream homes. We understand that a home is not just a place to live—home is a reflection of personality, a place to tell stories, and a space to create beautiful memories.",
+      "With our team of experienced designers and skilled craftsmen, we create custom furniture that is not only visually stunning but also reflects each client's unique lifestyle. Every project is a collaboration—we listen to your vision and bring it to life with quality that exceeds expectations.",
+      'Your trust is our greatest asset. With our commitment to quality, punctuality, and transparency, we are proud to be part of the journey to create a home that truly feels like "home".',
+    ],
+  },
+  stats: [
+    {
+      number: "150+",
+      label: {
+        id: "Klien Bahagia",
+        en: "Happy Clients",
+      },
+    },
+    {
+      number: "5",
+      label: {
+        id: "Tahun Pengalaman",
+        en: "Years Experience",
+      },
+    },
+    {
+      number: "300+",
+      label: {
+        id: "Project Selesai",
+        en: "Projects Completed",
+      },
+    },
+    {
+      number: "99%",
+      label: {
+        id: "Tingkat Kepuasan",
+        en: "Satisfaction Rate",
+      },
+    },
+  ],
+};

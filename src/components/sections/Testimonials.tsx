@@ -22,12 +22,15 @@ export const Testimonials: React.FC = () => {
       <div className="spacing-container">
         <div className="text-center mb-16">
           <h2 className="text-heading-1 text-text-charcoal mb-6">
-            {t({ id: "Testimoni Klien", en: "Client Testimonials" })}
+            {t({
+              id: "Cerita Kebahagiaan Klien Kami",
+              en: "Stories of Our Clients' Happiness",
+            })}
           </h2>
           <p className="text-body-large text-gray-600 max-w-3xl mx-auto">
             {t({
-              id: "Kepercayaan dan kepuasan klien adalah prioritas utama kami.",
-              en: "Client trust and satisfaction are our top priorities.",
+              id: "Lebih dari 150 keluarga telah merasakan perbedaan kualitas Lenggah. Kepercayaan dan kepuasan mereka adalah kebanggaan terbesar kami.",
+              en: "Over 150 families have experienced the Lenggah quality difference. Their trust and satisfaction are our greatest pride.",
             })}
           </p>
         </div>
