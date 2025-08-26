@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { Instagram, Facebook, Phone, Mail } from 'lucide-react';
+import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
 import { useLanguage } from '../../hooks/useLanguage';
 
 export const Footer: React.FC = () => {
@@ -101,14 +101,46 @@ export const Footer: React.FC = () => {
               {t({ id: "Kontak", en: "Contact" })}
             </h4>
             <div className="space-y-3">
-              <div className="flex items-center">
-                <Phone className="w-5 h-5 mr-3 text-accent-forest" />
-                <span className="text-primary-ivory/80">+62 812-3456-7890</span>
-              </div>
-              <div className="flex items-center">
-                <Mail className="w-5 h-5 mr-3 text-accent-forest" />
-                <span className="text-primary-ivory/80">info@lenggah.com</span>
-              </div>
+              <a
+                href="https://wa.me/6281386288099"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-primary-ivory transition-colors group"
+              >
+                <Phone className="w-5 h-5 mr-3 text-accent-forest group-hover:text-accent-forest/80" />
+                <span className="text-primary-ivory/80 group-hover:text-primary-ivory">
+                  +62 813-8628-8099
+                </span>
+              </a>
+              <a
+                href="mailto:hello@lenggah.com"
+                className="flex items-center hover:text-primary-ivory transition-colors group"
+              >
+                <Mail className="w-5 h-5 mr-3 text-accent-forest group-hover:text-accent-forest/80" />
+                <span className="text-primary-ivory/80 group-hover:text-primary-ivory">
+                  hello@lenggah.com
+                </span>
+              </a>
+              <a
+                href="https://maps.google.com/?q=-6.2791259,106.849637"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start hover:text-primary-ivory transition-colors group"
+              >
+                <MapPin className="w-5 h-5 mr-3 text-accent-forest mt-0.5 group-hover:text-accent-forest/80" />
+                <div className="text-primary-ivory/80 group-hover:text-primary-ivory">
+                  <div className="font-medium">
+                    {t({ id: "Workshop", en: "Workshop" })}
+                  </div>
+                  <div className="text-sm leading-relaxed">
+                    Jl. Munggang Gg. H. Guntong
+                    <br />
+                    RT 10/RW 4, Kel. Balekambang
+                    <br />
+                    Jakarta Timur 13530
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>

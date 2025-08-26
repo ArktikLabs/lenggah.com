@@ -80,10 +80,10 @@ export const Contact: React.FC = () => {
     }
   };
 
-  const whatsappLink = `https://wa.me/6281234567890?text=${encodeURIComponent(
+  const whatsappLink = `https://wa.me/6281386288099?text=${encodeURIComponent(
     t({
-      id: 'Halo, saya tertarik dengan layanan Lenggah. Mohon informasi lebih lanjut.',
-      en: 'Hello, I am interested in Lenggah services. Please provide more information.'
+      id: "Halo, saya tertarik dengan layanan Lenggah. Mohon informasi lebih lanjut.",
+      en: "Hello, I am interested in Lenggah services. Please provide more information.",
     })
   )}`;
 
@@ -121,7 +121,7 @@ export const Contact: React.FC = () => {
                       rel="noopener noreferrer"
                       className="text-accent-forest hover:underline"
                     >
-                      +62 812-3456-7890
+                      +62 813-8628-8099
                     </a>
                   </div>
                 </div>
@@ -137,10 +137,10 @@ export const Contact: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-text-charcoal">Email</h3>
                     <a
-                      href="mailto:info@lenggah.com"
+                      href="mailto:hello@lenggah.com"
                       className="text-accent-forest hover:underline"
                     >
-                      info@lenggah.com
+                      hello@lenggah.com
                     </a>
                   </div>
                 </div>
@@ -179,7 +179,10 @@ export const Contact: React.FC = () => {
                       {t({ id: "Area Layanan", en: "Service Area" })}
                     </h3>
                     <p className="text-text-charcoal/70 text-sm">
-                      {t({ id: "DIY & Jawa Tengah", en: "DIY & Central Java" })}
+                      {t({
+                        id: "Jakarta & Sekitarnya",
+                        en: "Jakarta & Surrounding Areas",
+                      })}
                     </p>
                   </div>
                 </div>
