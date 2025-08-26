@@ -88,16 +88,16 @@ export const Contact: React.FC = () => {
   )}`;
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-primary-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#222222] mb-6 font-serif">
-            {t({ id: 'Hubungi Kami', en: 'Contact Us' })}
+          <h2 className="text-4xl font-bold text-text-charcoal mb-6 font-serif">
+            {t({ id: "Hubungi Kami", en: "Contact Us" })}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-text-charcoal/70 max-w-3xl mx-auto">
             {t({
-              id: 'Siap memulai proyek impian Anda? Hubungi kami untuk konsultasi gratis.',
-              en: 'Ready to start your dream project? Contact us for a free consultation.'
+              id: "Siap memulai proyek impian Anda? Hubungi kami untuk konsultasi gratis.",
+              en: "Ready to start your dream project? Contact us for a free consultation.",
             })}
           </p>
         </div>
@@ -108,16 +108,18 @@ export const Contact: React.FC = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#6B4F3A] rounded-lg flex items-center justify-center mr-4">
-                    <Phone className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
+                    <Phone className="w-6 h-6 text-primary-ivory" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#222222]">WhatsApp</h3>
-                    <a 
+                    <h3 className="font-semibold text-text-charcoal">
+                      WhatsApp
+                    </h3>
+                    <a
                       href={whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#3C6E47] hover:underline"
+                      className="text-accent-forest hover:underline"
                     >
                       +62 812-3456-7890
                     </a>
@@ -129,14 +131,14 @@ export const Contact: React.FC = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#6B4F3A] rounded-lg flex items-center justify-center mr-4">
-                    <Mail className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
+                    <Mail className="w-6 h-6 text-primary-ivory" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#222222]">Email</h3>
-                    <a 
+                    <h3 className="font-semibold text-text-charcoal">Email</h3>
+                    <a
                       href="mailto:info@lenggah.com"
-                      className="text-[#3C6E47] hover:underline"
+                      className="text-accent-forest hover:underline"
                     >
                       info@lenggah.com
                     </a>
@@ -148,15 +150,18 @@ export const Contact: React.FC = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#6B4F3A] rounded-lg flex items-center justify-center mr-4">
-                    <Clock className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
+                    <Clock className="w-6 h-6 text-primary-ivory" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#222222]">
-                      {t({ id: 'Jam Operasional', en: 'Operating Hours' })}
+                    <h3 className="font-semibold text-text-charcoal">
+                      {t({ id: "Jam Operasional", en: "Operating Hours" })}
                     </h3>
-                    <p className="text-gray-600 text-sm">
-                      {t({ id: 'Senin - Sabtu: 08.00 - 17.00', en: 'Monday - Saturday: 08.00 - 17.00' })}
+                    <p className="text-text-charcoal/70 text-sm">
+                      {t({
+                        id: "Senin - Sabtu: 08.00 - 17.00",
+                        en: "Monday - Saturday: 08.00 - 17.00",
+                      })}
                     </p>
                   </div>
                 </div>
@@ -166,15 +171,15 @@ export const Contact: React.FC = () => {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#6B4F3A] rounded-lg flex items-center justify-center mr-4">
-                    <MapPin className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
+                    <MapPin className="w-6 h-6 text-primary-ivory" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#222222]">
-                      {t({ id: 'Area Layanan', en: 'Service Area' })}
+                    <h3 className="font-semibold text-text-charcoal">
+                      {t({ id: "Area Layanan", en: "Service Area" })}
                     </h3>
-                    <p className="text-gray-600 text-sm">
-                      {t({ id: 'DIY & Jawa Tengah', en: 'DIY & Central Java' })}
+                    <p className="text-text-charcoal/70 text-sm">
+                      {t({ id: "DIY & Jawa Tengah", en: "DIY & Central Java" })}
                     </p>
                   </div>
                 </div>
@@ -193,15 +198,18 @@ export const Contact: React.FC = () => {
                     name="honeypot"
                     value={formData.honeypot}
                     onChange={handleInputChange}
-                    style={{ display: 'none' }}
+                    style={{ display: "none" }}
                     tabIndex={-1}
                     autoComplete="off"
                   />
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-[#222222] mb-2">
-                        {t({ id: 'Nama Lengkap', en: 'Full Name' })} *
+                      <label
+                        htmlFor="name"
+                        className="block text-sm font-medium text-text-charcoal mb-2"
+                      >
+                        {t({ id: "Nama Lengkap", en: "Full Name" })} *
                       </label>
                       <input
                         type="text"
@@ -210,13 +218,19 @@ export const Contact: React.FC = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B4F3A] focus:border-transparent transition-colors"
-                        placeholder={t({ id: 'Masukkan nama lengkap', en: 'Enter full name' })}
+                        className="w-full px-4 py-3 border border-tertiary-earth/30 rounded-lg focus:ring-2 focus:ring-accent-forest focus:border-transparent transition-colors bg-secondary-wood/30"
+                        placeholder={t({
+                          id: "Masukkan nama lengkap",
+                          en: "Enter full name",
+                        })}
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-[#222222] mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-text-charcoal mb-2"
+                      >
                         Email *
                       </label>
                       <input
@@ -226,14 +240,20 @@ export const Contact: React.FC = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B4F3A] focus:border-transparent transition-colors"
-                        placeholder={t({ id: 'Masukkan email', en: 'Enter email' })}
+                        className="w-full px-4 py-3 border border-tertiary-earth/30 rounded-lg focus:ring-2 focus:ring-accent-forest focus:border-transparent transition-colors bg-secondary-wood/30"
+                        placeholder={t({
+                          id: "Masukkan email",
+                          en: "Enter email",
+                        })}
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-[#222222] mb-2">
-                        {t({ id: 'Telepon/WhatsApp', en: 'Phone/WhatsApp' })} *
+                      <label
+                        htmlFor="phone"
+                        className="block text-sm font-medium text-[#222222] mb-2"
+                      >
+                        {t({ id: "Telepon/WhatsApp", en: "Phone/WhatsApp" })} *
                       </label>
                       <input
                         type="tel"
@@ -243,13 +263,19 @@ export const Contact: React.FC = () => {
                         onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B4F3A] focus:border-transparent transition-colors"
-                        placeholder={t({ id: 'Masukkan nomor telepon', en: 'Enter phone number' })}
+                        placeholder={t({
+                          id: "Masukkan nomor telepon",
+                          en: "Enter phone number",
+                        })}
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="location" className="block text-sm font-medium text-[#222222] mb-2">
-                        {t({ id: 'Lokasi Proyek', en: 'Project Location' })} *
+                      <label
+                        htmlFor="location"
+                        className="block text-sm font-medium text-[#222222] mb-2"
+                      >
+                        {t({ id: "Lokasi Proyek", en: "Project Location" })} *
                       </label>
                       <input
                         type="text"
@@ -259,14 +285,23 @@ export const Contact: React.FC = () => {
                         onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B4F3A] focus:border-transparent transition-colors"
-                        placeholder={t({ id: 'Kota/Kabupaten', en: 'City/Regency' })}
+                        placeholder={t({
+                          id: "Kota/Kabupaten",
+                          en: "City/Regency",
+                        })}
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="budget" className="block text-sm font-medium text-[#222222] mb-2">
-                      {t({ id: 'Anggaran (Opsional)', en: 'Budget (Optional)' })}
+                    <label
+                      htmlFor="budget"
+                      className="block text-sm font-medium text-[#222222] mb-2"
+                    >
+                      {t({
+                        id: "Anggaran (Opsional)",
+                        en: "Budget (Optional)",
+                      })}
                     </label>
                     <select
                       id="budget"
@@ -284,8 +319,11 @@ export const Contact: React.FC = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-[#222222] mb-2">
-                      {t({ id: 'Pesan', en: 'Message' })} *
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-[#222222] mb-2"
+                    >
+                      {t({ id: "Pesan", en: "Message" })} *
                     </label>
                     <textarea
                       id="message"
@@ -295,9 +333,9 @@ export const Contact: React.FC = () => {
                       required
                       rows={5}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B4F3A] focus:border-transparent transition-colors resize-vertical"
-                      placeholder={t({ 
-                        id: 'Ceritakan tentang proyek yang Anda inginkan...', 
-                        en: 'Tell us about your desired project...' 
+                      placeholder={t({
+                        id: "Ceritakan tentang proyek yang Anda inginkan...",
+                        en: "Tell us about your desired project...",
                       })}
                     ></textarea>
                   </div>
@@ -311,26 +349,25 @@ export const Contact: React.FC = () => {
                       disabled={isSubmitting}
                       className="w-full sm:w-auto"
                     >
-                      {isSubmitting 
-                        ? t({ id: 'Mengirim...', en: 'Sending...' })
-                        : t({ id: 'Kirim Pesan', en: 'Send Message' })
-                      }
+                      {isSubmitting
+                        ? t({ id: "Mengirim...", en: "Sending..." })
+                        : t({ id: "Kirim Pesan", en: "Send Message" })}
                     </Button>
 
-                    {submitStatus === 'success' && (
+                    {submitStatus === "success" && (
                       <p className="text-[#3C6E47] text-sm">
-                        {t({ 
-                          id: 'Pesan berhasil dikirim! Kami akan segera menghubungi Anda.', 
-                          en: 'Message sent successfully! We will contact you soon.' 
+                        {t({
+                          id: "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.",
+                          en: "Message sent successfully! We will contact you soon.",
                         })}
                       </p>
                     )}
 
-                    {submitStatus === 'error' && (
+                    {submitStatus === "error" && (
                       <p className="text-red-500 text-sm">
-                        {t({ 
-                          id: 'Terjadi kesalahan. Silakan coba lagi.', 
-                          en: 'An error occurred. Please try again.' 
+                        {t({
+                          id: "Terjadi kesalahan. Silakan coba lagi.",
+                          en: "An error occurred. Please try again.",
                         })}
                       </p>
                     )}

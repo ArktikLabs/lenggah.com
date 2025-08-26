@@ -21,9 +21,12 @@ export const Button: React.FC<ButtonProps> = ({
   const baseClasses = 'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
   
   const variants = {
-    primary: 'bg-[#6B4F3A] text-white hover:bg-[#5a3e2c] focus:ring-[#6B4F3A]',
-    secondary: 'bg-[#3C6E47] text-white hover:bg-[#2d5436] focus:ring-[#3C6E47]',
-    outline: 'border-2 border-[#6B4F3A] text-[#6B4F3A] hover:bg-[#6B4F3A] hover:text-white focus:ring-[#6B4F3A]'
+    primary:
+      "bg-accent-forest text-primary-ivory hover:bg-accent-forest/90 focus:ring-accent-forest/50 shadow-sm",
+    secondary:
+      "bg-secondary-wood text-text-charcoal hover:bg-secondary-wood/80 focus:ring-secondary-wood/50 border border-tertiary-earth/20",
+    outline:
+      "border-2 border-accent-forest text-accent-forest hover:bg-accent-forest hover:text-primary-ivory focus:ring-accent-forest/50 bg-transparent",
   };
 
   const sizes = {

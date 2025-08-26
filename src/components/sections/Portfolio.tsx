@@ -25,16 +25,16 @@ export const Portfolio: React.FC = () => {
     : portfolioItems.filter(item => item.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-20 bg-white">
+    <section id="portfolio" className="py-20 bg-secondary-wood">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#222222] mb-6 font-serif">
-            {t({ id: 'Portofolio Kami', en: 'Our Portfolio' })}
+          <h2 className="text-4xl font-bold text-text-charcoal mb-6 font-serif">
+            {t({ id: "Portofolio Kami", en: "Our Portfolio" })}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-text-charcoal/70 max-w-3xl mx-auto mb-8">
             {t({
-              id: 'Lihat berbagai proyek yang telah kami selesaikan dengan standar kualitas terbaik.',
-              en: 'See various projects we have completed with the best quality standards.'
+              id: "Lihat berbagai proyek yang telah kami selesaikan dengan standar kualitas terbaik.",
+              en: "See various projects we have completed with the best quality standards.",
             })}
           </p>
 
@@ -46,8 +46,8 @@ export const Portfolio: React.FC = () => {
                 onClick={() => setActiveFilter(filter.key)}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                   activeFilter === filter.key
-                    ? 'bg-[#6B4F3A] text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-600 hover:bg-[#6B4F3A] hover:text-white'
+                    ? "bg-accent-forest text-primary-ivory shadow-lg"
+                    : "bg-primary-ivory text-text-charcoal hover:bg-accent-forest hover:text-primary-ivory border border-tertiary-earth/20"
                 }`}
               >
                 {t(filter.label)}
@@ -59,7 +59,10 @@ export const Portfolio: React.FC = () => {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredItems.map((item) => (
-            <Card key={item.id} className="overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+            <Card
+              key={item.id}
+              className="overflow-hidden group hover:-translate-y-2 transition-all duration-300 bg-primary-ivory"
+            >
               <div className="relative overflow-hidden h-64">
                 <Image
                   src={item.image}
@@ -70,27 +73,26 @@ export const Portfolio: React.FC = () => {
                   placeholder="blur"
                   blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-text-charcoal/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-semibold text-[#222222] leading-tight">
+                  <h3 className="text-xl font-semibold text-text-charcoal leading-tight">
                     {t(item.title)}
                   </h3>
                   <Badge variant="secondary">
-                    {item.category === 'hunian' 
-                      ? t({ id: 'Hunian', en: 'Residential' })
-                      : item.category === 'komersial' 
-                      ? t({ id: 'Komersial', en: 'Commercial' })
-                      : t({ id: 'Furnitur', en: 'Furniture' })
-                    }
+                    {item.category === "hunian"
+                      ? t({ id: "Hunian", en: "Residential" })
+                      : item.category === "komersial"
+                      ? t({ id: "Komersial", en: "Commercial" })
+                      : t({ id: "Furnitur", en: "Furniture" })}
                   </Badge>
                 </div>
-                <div className="flex items-center text-gray-500 text-sm mb-3">
+                <div className="flex items-center text-tertiary-earth text-sm mb-3">
                   <MapPin className="w-4 h-4 mr-1" />
                   {item.location}
                 </div>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-text-charcoal/70 leading-relaxed">
                   {t(item.materials)}
                 </p>
               </CardContent>
@@ -100,10 +102,10 @@ export const Portfolio: React.FC = () => {
 
         {filteredItems.length === 0 && (
           <div className="text-center py-16">
-            <p className="text-gray-500 text-lg">
-              {t({ 
-                id: 'Portofolio untuk kategori ini segera hadir.', 
-                en: 'Portfolio for this category coming soon.' 
+            <p className="text-tertiary-earth text-lg">
+              {t({
+                id: "Portofolio untuk kategori ini segera hadir.",
+                en: "Portfolio for this category coming soon.",
               })}
             </p>
           </div>

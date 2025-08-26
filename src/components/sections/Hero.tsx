@@ -42,58 +42,58 @@ export const Hero: React.FC = () => {
         />
         <div className="absolute inset-0 bg-black/40" />
       </div>
-      
+
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="mb-8 flex justify-center">
             <Badge variant="secondary">
-              {t({ 
-                id: 'Kustom • Fungsional • Tahan Lama', 
-                en: 'Custom • Functional • Durable' 
+              {t({
+                id: "Kustom • Fungsional • Tahan Lama",
+                en: "Custom • Functional • Durable",
               })}
             </Badge>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight font-serif">
-            {t({ 
-              id: 'Rancang Furnitur & Interior yang Mengajak Anda', 
-              en: 'Craft Furniture & Interiors That Invite You to' 
+            {t({
+              id: "Rancang Furnitur & Interior yang Mengajak Anda",
+              en: "Craft Furniture & Interiors That Invite You to",
             })}
-            <span className="block text-[#F5EFE6] mt-2">
+            <span className="block text-primary-ivory mt-2">
               {t({ id: '"Lenggah"', en: '"Lenggah" (Sit)' })}
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed">
-            {t({ 
-              id: 'Kenyamanan yang terasa, estetika yang bertahan. Kustom dari ide hingga pemasangan.', 
-              en: 'Comfort you can feel, aesthetics that last. Custom from concept to installation.' 
+            {t({
+              id: "Kenyamanan yang terasa, estetika yang bertahan. Kustom dari ide hingga pemasangan.",
+              en: "Comfort you can feel, aesthetics that last. Custom from concept to installation.",
             })}
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
+            <Button
               size="lg"
               icon={ArrowRight}
               iconPosition="right"
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => scrollToSection("#contact")}
               className="w-full sm:w-auto"
             >
-              {t({ id: 'Mulai Konsultasi', en: 'Start Consultation' })}
+              {t({ id: "Mulai Konsultasi", en: "Start Consultation" })}
             </Button>
-            <Button 
+            <Button
               variant="outline"
               size="lg"
               icon={Play}
-              onClick={() => scrollToSection('#portfolio')}
-              className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-[#6B4F3A]"
+              onClick={() => scrollToSection("#portfolio")}
+              className="w-full sm:w-auto bg-white/10 border-white text-white hover:bg-white hover:text-text-charcoal"
             >
-              {t({ id: 'Lihat Portofolio', en: 'View Portfolio' })}
+              {t({ id: "Lihat Portofolio", en: "View Portfolio" })}
             </Button>
           </div>
         </div>
@@ -103,7 +103,7 @@ export const Hero: React.FC = () => {
           <p className="text-white text-lg leading-relaxed">
             {t({
               id: 'Dalam bahasa Jawa, lenggah berarti "duduk". Kami merancang agar tubuh, pikiran, dan ruang dapat "lenggah"—tenang, nyaman, dan berkelanjutan.',
-              en: 'In Javanese, lenggah means "to sit". We design so body, mind, and space can "lenggah"—calm, comfortable, and enduring.'
+              en: 'In Javanese, lenggah means "to sit". We design so body, mind, and space can "lenggah"—calm, comfortable, and enduring.',
             })}
           </p>
         </div>

@@ -2,3 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Lenggah Brand Color Variables */
+:root {
+  /* Core Brand Palette */
+  --primary-ivory: #F4E8E1;
+  --secondary-wood: #CEC5AD;
+  --accent-forest: #0B5509;
+  --text-charcoal: #302621;
+  --tertiary-earth: #836539;
+
+  /* Dark mode variants */
+  --primary-dark: #2A2017;
+  --secondary-dark: #3A3528;
+  --accent-light: #0F6B0C;
+  --text-light: #F4E8E1;
+  --tertiary-light: #A8926B;
+}
+
+/* Global base styles following Lenggah brand guidelines */
+@layer base {
+  body {
+    background-color: var(--primary-ivory);
+    color: var(--text-charcoal);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Typography hierarchy with brand colors */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-charcoal);
+  }
+
+  /* Smooth scrolling for better UX */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Component layer for reusable patterns */
+@layer components {
+
+  /* Primary content sections (60% usage) */
+  .section-primary {
+    @apply bg-primary-ivory;
+  }
+
+  /* Secondary content blocks (30% usage) */
+  .section-secondary {
+    @apply bg-secondary-wood;
+  }
+
+  /* Accent elements (10% usage - CTAs only) */
+  .cta-accent {
+    @apply bg-accent-forest text-primary-ivory;
+  }
+
+  /* Text utilities */
+  .text-primary {
+    @apply text-text-charcoal;
+  }
+
+  .text-secondary {
+    @apply text-tertiary-earth;
+  }
+
+  /* Card components with proper layering */
+  .card-primary {
+    @apply bg-primary-ivory border border-tertiary-earth/20 rounded-lg;
+  }
+
+  .card-secondary {
+    @apply bg-secondary-wood border border-tertiary-earth/30 rounded-lg;
+  }
+}

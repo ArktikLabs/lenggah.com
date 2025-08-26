@@ -48,14 +48,18 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-primary-ivory/95 backdrop-blur-sm shadow-lg"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-[#6B4F3A] font-serif">
+            <h1 className="text-2xl font-bold text-accent-forest font-serif">
               Lenggah
             </h1>
           </div>
@@ -66,10 +70,12 @@ export const Header: React.FC = () => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-sm font-medium transition-colors duration-200 hover:text-[#6B4F3A] ${
+                className={`text-sm font-medium transition-colors duration-200 hover:text-accent-forest ${
                   activeSection === item.href.substring(1)
-                    ? 'text-[#6B4F3A] border-b-2 border-[#6B4F3A] pb-1'
-                    : isScrolled ? 'text-[#222222]' : 'text-white'
+                    ? "text-accent-forest border-b-2 border-accent-forest pb-1"
+                    : isScrolled
+                    ? "text-text-charcoal"
+                    : "text-white"
                 }`}
               >
                 {t(item.name)}
@@ -81,20 +87,17 @@ export const Header: React.FC = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <button
               onClick={toggleLanguage}
-              className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-200 hover:text-[#6B4F3A] ${
-                isScrolled ? 'text-[#222222]' : 'text-white'
+              className={`flex items-center space-x-1 text-sm font-medium transition-colors duration-200 hover:text-accent-forest ${
+                isScrolled ? "text-text-charcoal" : "text-white"
               }`}
             >
               <Globe className="w-4 h-4" />
-              <span className={language === 'id' ? 'font-bold' : ''}>ID</span>
+              <span className={language === "id" ? "font-bold" : ""}>ID</span>
               <span>|</span>
-              <span className={language === 'en' ? 'font-bold' : ''}>EN</span>
+              <span className={language === "en" ? "font-bold" : ""}>EN</span>
             </button>
-            <Button 
-              size="sm"
-              onClick={() => scrollToSection('#contact')}
-            >
-              {t({ id: 'Konsultasi Gratis', en: 'Free Consultation' })}
+            <Button size="sm" onClick={() => scrollToSection("#contact")}>
+              {t({ id: "Konsultasi Gratis", en: "Free Consultation" })}
             </Button>
           </div>
 
@@ -102,41 +105,48 @@ export const Header: React.FC = () => {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`lg:hidden p-2 rounded-md transition-colors duration-200 ${
-              isScrolled ? 'text-[#222222] hover:bg-gray-100' : 'text-white hover:bg-white/10'
+              isScrolled
+                ? "text-text-charcoal hover:bg-secondary-wood/50"
+                : "text-white hover:bg-white/10"
             }`}
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t">
+          <div className="lg:hidden absolute top-full left-0 w-full bg-primary-ivory shadow-xl border-t border-tertiary-earth/20">
             <nav className="px-4 py-6 space-y-4">
               {navigation.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left py-2 text-[#222222] hover:text-[#6B4F3A] font-medium"
+                  className="block w-full text-left py-2 text-text-charcoal hover:text-accent-forest font-medium"
                 >
                   {t(item.name)}
                 </button>
               ))}
-              <div className="pt-4 border-t border-gray-200 flex items-center justify-between">
+              <div className="pt-4 border-t border-tertiary-earth/20 flex items-center justify-between">
                 <button
                   onClick={toggleLanguage}
-                  className="flex items-center space-x-1 text-sm font-medium text-[#222222] hover:text-[#6B4F3A]"
+                  className="flex items-center space-x-1 text-sm font-medium text-text-charcoal hover:text-accent-forest"
                 >
                   <Globe className="w-4 h-4" />
-                  <span className={language === 'id' ? 'font-bold' : ''}>ID</span>
+                  <span className={language === "id" ? "font-bold" : ""}>
+                    ID
+                  </span>
                   <span>|</span>
-                  <span className={language === 'en' ? 'font-bold' : ''}>EN</span>
+                  <span className={language === "en" ? "font-bold" : ""}>
+                    EN
+                  </span>
                 </button>
-                <Button 
-                  size="sm"
-                  onClick={() => scrollToSection('#contact')}
-                >
-                  {t({ id: 'Konsultasi Gratis', en: 'Free Consultation' })}
+                <Button size="sm" onClick={() => scrollToSection("#contact")}>
+                  {t({ id: "Konsultasi Gratis", en: "Free Consultation" })}
                 </Button>
               </div>
             </nav>
