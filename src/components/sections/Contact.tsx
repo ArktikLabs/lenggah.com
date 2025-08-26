@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from 'react';
-import { Phone, Mail, Clock, MapPin, Send, Building2 } from 'lucide-react';
-import { Button } from '../ui/Button';
-import { Card, CardContent } from '../ui/Card';
-import { useLanguage } from '../../hooks/useLanguage';
+import React, { useState } from "react";
+import { Phone, Mail, Clock, MapPin, Send, Building2 } from "lucide-react";
+import { Button } from "../ui/Button";
+import { Card, CardContent } from "../ui/Card";
+import { useLanguage } from "../../hooks/useLanguage";
 
 interface FormData {
   name: string;
@@ -18,63 +18,131 @@ interface FormData {
 export const Contact: React.FC = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    phone: '',
-    location: '',
-    budget: '',
-    message: '',
-    honeypot: ''
+    name: "",
+    email: "",
+    phone: "",
+    location: "",
+    budget: "",
+    message: "",
+    honeypot: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
+
+  // Function to detect mobile devices
+  const isMobileDevice = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  };
 
   const budgetOptions = [
-    { value: '', label: { id: 'Pilih range anggaran', en: 'Select budget range' } },
-    { value: 'under-10', label: { id: 'Di bawah 10 juta', en: 'Under 10 million' } },
-    { value: '10-25', label: { id: '10 - 25 juta', en: '10 - 25 million' } },
-    { value: '25-50', label: { id: '25 - 50 juta', en: '25 - 50 million' } },
-    { value: '50-100', label: { id: '50 - 100 juta', en: '50 - 100 million' } },
-    { value: 'above-100', label: { id: 'Di atas 100 juta', en: 'Above 100 million' } },
+    {
+      value: "",
+      label: { id: "Pilih range anggaran", en: "Select budget range" },
+    },
+    {
+      value: "under-10",
+      label: { id: "Di bawah 10 juta", en: "Under 10 million" },
+    },
+    { value: "10-25", label: { id: "10 - 25 juta", en: "10 - 25 million" } },
+    { value: "25-50", label: { id: "25 - 50 juta", en: "25 - 50 million" } },
+    { value: "50-100", label: { id: "50 - 100 juta", en: "50 - 100 million" } },
+    {
+      value: "above-100",
+      label: { id: "Di atas 100 juta", en: "Above 100 million" },
+    },
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Anti-spam check
     if (formData.honeypot) {
       return;
     }
 
     setIsSubmitting(true);
-    setSubmitStatus('idle');
+    setSubmitStatus("idle");
 
     try {
-      // Simulate form submission - replace with actual API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      // Here you would typically send to your backend or form service
-      console.log('Form submitted:', formData);
-      
-      setSubmitStatus('success');
+      // Create message content
+      const budgetLabel = budgetOptions.find(
+        (option) => option.value === formData.budget
+      )?.label;
+      const messageContent = `
+${t({ id: "Nama", en: "Name" })}: ${formData.name}
+${t({ id: "Email", en: "Email" })}: ${formData.email}
+${t({ id: "Telepon", en: "Phone" })}: ${formData.phone}
+${t({ id: "Lokasi", en: "Location" })}: ${formData.location}
+${t({ id: "Budget", en: "Budget" })}: ${budgetLabel ? t(budgetLabel) : ""}
+${t({ id: "Pesan", en: "Message" })}:
+${formData.message}
+      `.trim();
+
+      if (isMobileDevice()) {
+        // Mobile: Open WhatsApp
+        const whatsappMessage = `${t({
+          id: "Halo, saya tertarik dengan layanan Lenggah. Berikut detail saya:",
+          en: "Hello, I'm interested in Lenggah services. Here are my details:",
+        })}
+
+${messageContent}`;
+
+        const whatsappUrl = `https://wa.me/6281386288099?text=${encodeURIComponent(
+          whatsappMessage
+        )}`;
+        window.open(whatsappUrl, "_blank");
+      } else {
+        // Desktop: Open email client
+        const emailSubject = t({
+          id: "Konsultasi Furnitur Custom - Lenggah",
+          en: "Custom Furniture Consultation - Lenggah",
+        });
+
+        const emailBody = `${t({
+          id: "Halo tim Lenggah,\n\nSaya tertarik dengan layanan furnitur custom Anda. Berikut detail saya:",
+          en: "Hello Lenggah team,\n\nI'm interested in your custom furniture services. Here are my details:",
+        })}
+
+${messageContent}
+
+${t({
+  id: "Mohon informasi lebih lanjut mengenai layanan yang sesuai dengan kebutuhan saya.\n\nTerima kasih.",
+  en: "Please provide more information about services that match my needs.\n\nThank you.",
+})}`;
+
+        const mailtoUrl = `mailto:hello@lenggah.com?subject=${encodeURIComponent(
+          emailSubject
+        )}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = mailtoUrl;
+      }
+
+      setSubmitStatus("success");
       setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        location: '',
-        budget: '',
-        message: '',
-        honeypot: ''
+        name: "",
+        email: "",
+        phone: "",
+        location: "",
+        budget: "",
+        message: "",
+        honeypot: "",
       });
-    } catch (error) {
-      setSubmitStatus('error');
+    } catch {
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
