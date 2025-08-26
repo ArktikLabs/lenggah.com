@@ -9,16 +9,16 @@ export const Process: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="process" className="py-20 bg-[#F5EFE6]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="process" className="spacing-section bg-primary-ivory">
+      <div className="spacing-container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#222222] mb-6 font-serif">
-            {t({ id: 'Proses Kerja Kami', en: 'Our Work Process' })}
+          <h2 className="text-heading-1 text-text-charcoal mb-6">
+            {t({ id: "Proses Kerja Kami", en: "Our Work Process" })}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-body-large text-gray-600 max-w-3xl mx-auto">
             {t({
-              id: 'Lima langkah terstruktur untuk memastikan hasil yang sesuai dengan harapan Anda.',
-              en: 'Five structured steps to ensure results that meet your expectations.'
+              id: "Lima langkah terstruktur untuk memastikan hasil yang sesuai dengan harapan Anda.",
+              en: "Five structured steps to ensure results that meet your expectations.",
             })}
           </p>
         </div>
@@ -29,12 +29,23 @@ export const Process: React.FC = () => {
 
           <div className="space-y-12">
             {processSteps.map((step, index) => {
-              const Icon = Icons[step.icon as keyof typeof Icons] as React.ComponentType<any>;
+              const Icon = Icons[
+                step.icon as keyof typeof Icons
+              ] as React.ComponentType<any>;
               const isEven = index % 2 === 0;
 
               return (
-                <div key={step.id} className={`flex items-center ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
-                  <div className={`w-full lg:w-5/12 ${isEven ? 'lg:pr-8' : 'lg:pl-8'}`}>
+                <div
+                  key={step.id}
+                  className={`flex items-center ${
+                    isEven ? "lg:flex-row" : "lg:flex-row-reverse"
+                  }`}
+                >
+                  <div
+                    className={`w-full lg:w-5/12 ${
+                      isEven ? "lg:pr-8" : "lg:pl-8"
+                    }`}
+                  >
                     <Card className="group hover:-translate-y-2 transition-all duration-300">
                       <CardContent className="p-6">
                         <div className="flex items-center mb-4">
@@ -45,7 +56,7 @@ export const Process: React.FC = () => {
                             {index + 1}
                           </div>
                         </div>
-                        <h3 className="text-xl font-semibold text-[#222222] mb-3">
+                        <h3 className="text-heading-4 text-text-charcoal mb-3">
                           {t(step.title)}
                         </h3>
                         <p className="text-gray-600 leading-relaxed">

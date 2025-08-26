@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 spacing-container text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="mb-8 flex justify-center">
@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight font-serif">
+          <h1 className="text-display text-white mb-6">
             {t({
               id: "Rancang Furnitur & Interior yang Mengajak Anda",
               en: "Craft Furniture & Interiors That Invite You to",
@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-body-large text-gray-200 mb-10 max-w-3xl mx-auto">
             {t({
               id: "Kenyamanan yang terasa, estetika yang bertahan. Kustom dari ide hingga pemasangan.",
               en: "Comfort you can feel, aesthetics that last. Custom from concept to installation.",
@@ -100,7 +100,7 @@ export const Hero: React.FC = () => {
 
         {/* Philosophy Section */}
         <div className="mt-16 p-6 bg-white/10 backdrop-blur-sm rounded-2xl max-w-2xl mx-auto">
-          <p className="text-white text-lg leading-relaxed">
+          <p className="text-body-large text-white">
             {t({
               id: 'Dalam bahasa Jawa, lenggah berarti "duduk". Kami merancang agar tubuh, pikiran, dan ruang dapat "lenggah"—tenang, nyaman, dan berkelanjutan.',
               en: 'In Javanese, lenggah means "to sit". We design so body, mind, and space can "lenggah"—calm, comfortable, and enduring.',

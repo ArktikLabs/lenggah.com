@@ -7,14 +7,14 @@ export const About: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="py-20 bg-primary-ivory">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="spacing-section bg-primary-ivory">
+      <div className="spacing-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-text-charcoal mb-8 font-serif">
+            <h2 className="text-heading-1 text-text-charcoal mb-8">
               {t({ id: "Tentang Lenggah", en: "About Lenggah" })}
             </h2>
-            <div className="space-y-6 text-lg text-text-charcoal/80 leading-relaxed">
+            <div className="space-y-6 text-body-large text-text-charcoal/80">
               <p>
                 {t({
                   id: "Lenggah adalah studio furnitur & interior yang berangkat dari filosofi duduk—menciptakan ruang yang menenangkan, mendukung aktivitas, dan awet digunakan.",

@@ -31,21 +31,24 @@ export const ValueProps: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#F5EFE6]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="spacing-section bg-primary-ivory">
+      <div className="spacing-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {valueProps.map((prop, index) => {
             const Icon = prop.icon;
             return (
-              <Card key={index} className="text-center hover:-translate-y-2 transition-transform duration-300">
+              <Card
+                key={index}
+                className="text-center hover:-translate-y-2 transition-transform duration-300"
+              >
                 <CardContent className="p-6">
-                  <div className="w-16 h-16 bg-[#3C6E47] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-accent-forest rounded-full flex items-center justify-center mx-auto mb-4">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#222222] mb-3">
+                  <h3 className="text-heading-4 text-text-charcoal mb-3">
                     {t(prop.title)}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-body-small text-gray-600">
                     {t(prop.description)}
                   </p>
                 </CardContent>

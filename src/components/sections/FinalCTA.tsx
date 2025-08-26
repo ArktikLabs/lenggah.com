@@ -46,11 +46,11 @@ export const FinalCTA: React.FC = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-text-charcoal/90 to-accent-forest/90" />
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-serif">
+        <div className="relative z-10 spacing-container text-center">
+          <h2 className="text-display text-white mb-6">
             Siap "Lenggah" di Ruang yang Nyaman?
           </h2>
-          <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+          <p className="text-body-large text-gray-200 mb-10 max-w-2xl mx-auto">
             Mulai konsultasi gratis hari ini dan wujudkan ruang impian Anda
             bersama tim ahli kami.
           </p>
@@ -88,15 +88,15 @@ export const FinalCTA: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-serif">
+      <div className="relative z-10 spacing-container text-center">
+        <h2 className="text-display text-white mb-6">
           {t({
             id: 'Siap "Lenggah" di Ruang yang Nyaman?',
             en: 'Ready to "Lenggah" in a Comfortable Space?',
           })}
         </h2>
 
-        <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+        <p className="text-body-large text-gray-200 mb-10 max-w-2xl mx-auto">
           {t({
             id: "Mulai konsultasi gratis hari ini dan wujudkan ruang impian Anda bersama tim ahli kami.",
             en: "Start a free consultation today and realize your dream space with our expert team.",

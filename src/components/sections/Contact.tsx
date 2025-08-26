@@ -88,13 +88,13 @@ export const Contact: React.FC = () => {
   )}`;
 
   return (
-    <section id="contact" className="py-20 bg-primary-ivory">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="spacing-section bg-primary-ivory">
+      <div className="spacing-container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-text-charcoal mb-6 font-serif">
+          <h2 className="text-heading-1 text-text-charcoal mb-6">
             {t({ id: "Hubungi Kami", en: "Contact Us" })}
           </h2>
-          <p className="text-xl text-text-charcoal/70 max-w-3xl mx-auto">
+          <p className="text-body-large text-text-charcoal/70 max-w-3xl mx-auto">
             {t({
               id: "Siap memulai proyek impian Anda? Hubungi kami untuk konsultasi gratis.",
               en: "Ready to start your dream project? Contact us for a free consultation.",
@@ -112,7 +112,7 @@ export const Contact: React.FC = () => {
                     <Phone className="w-6 h-6 text-primary-ivory" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-charcoal">
+                    <h3 className="text-heading-4 text-text-charcoal">
                       WhatsApp
                     </h3>
                     <a
@@ -135,7 +135,7 @@ export const Contact: React.FC = () => {
                     <Mail className="w-6 h-6 text-primary-ivory" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-charcoal">Email</h3>
+                    <h3 className="text-heading-4 text-text-charcoal">Email</h3>
                     <a
                       href="mailto:hello@lenggah.com"
                       className="text-accent-forest hover:underline"
@@ -154,10 +154,10 @@ export const Contact: React.FC = () => {
                     <Clock className="w-6 h-6 text-primary-ivory" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-charcoal">
+                    <h3 className="text-heading-4 text-text-charcoal">
                       {t({ id: "Jam Operasional", en: "Operating Hours" })}
                     </h3>
-                    <p className="text-text-charcoal/70 text-sm">
+                    <p className="text-body-small text-text-charcoal/70">
                       {t({
                         id: "Senin - Sabtu: 08.00 - 17.00",
                         en: "Monday - Saturday: 08.00 - 17.00",
@@ -175,10 +175,10 @@ export const Contact: React.FC = () => {
                     <MapPin className="w-6 h-6 text-primary-ivory" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-charcoal">
+                    <h3 className="text-heading-4 text-text-charcoal">
                       {t({ id: "Area Layanan", en: "Service Area" })}
                     </h3>
-                    <p className="text-text-charcoal/70 text-sm">
+                    <p className="text-body-small text-text-charcoal/70">
                       {t({
                         id: "Jakarta & Sekitarnya",
                         en: "Jakarta & Surrounding Areas",

@@ -45,6 +45,42 @@
 
 /* Component layer for reusable patterns */
 @layer components {
+  /* Typography System - Standardized font sizes */
+    .text-display {
+      @apply text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight;
+    }
+  
+    .text-heading-1 {
+      @apply text-3xl md:text-4xl font-bold font-serif leading-tight;
+    }
+  
+    .text-heading-2 {
+      @apply text-2xl md:text-3xl font-bold font-serif leading-tight;
+    }
+  
+    .text-heading-3 {
+      @apply text-xl font-semibold leading-tight;
+    }
+  
+    .text-heading-4 {
+      @apply text-lg font-semibold leading-tight;
+    }
+  
+    .text-body-large {
+      @apply text-lg md:text-xl leading-relaxed;
+    }
+  
+    .text-body {
+      @apply text-base leading-relaxed;
+    }
+  
+    .text-body-small {
+      @apply text-sm leading-relaxed;
+    }
+  
+    .text-caption {
+      @apply text-xs leading-normal;
+    }
 
   /* Primary content sections (60% usage) */
   .section-primary {
@@ -78,4 +114,16 @@
   .card-secondary {
     @apply bg-secondary-wood border border-tertiary-earth/30 rounded-lg;
   }
+    /* Standardized spacing system */
+    .spacing-section {
+      @apply py-16 md:py-20;
+    }
+  
+    .spacing-container {
+      @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+  
+    .spacing-content {
+      @apply mb-12 md:mb-16;
+    }
 }

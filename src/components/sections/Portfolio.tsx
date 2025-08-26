@@ -25,13 +25,13 @@ export const Portfolio: React.FC = () => {
     : portfolioItems.filter(item => item.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-20 bg-secondary-wood">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="spacing-section bg-secondary-wood">
+      <div className="spacing-container">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-text-charcoal mb-6 font-serif">
+          <h2 className="text-heading-1 text-text-charcoal mb-6">
             {t({ id: "Portofolio Kami", en: "Our Portfolio" })}
           </h2>
-          <p className="text-xl text-text-charcoal/70 max-w-3xl mx-auto mb-8">
+          <p className="text-body-large text-text-charcoal/70 max-w-3xl mx-auto mb-8">
             {t({
               id: "Lihat berbagai proyek yang telah kami selesaikan dengan standar kualitas terbaik.",
               en: "See various projects we have completed with the best quality standards.",
@@ -77,7 +77,7 @@ export const Portfolio: React.FC = () => {
               </div>
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-semibold text-text-charcoal leading-tight">
+                  <h3 className="text-heading-4 text-text-charcoal">
                     {t(item.title)}
                   </h3>
                   <Badge variant="secondary">
@@ -88,11 +88,11 @@ export const Portfolio: React.FC = () => {
                       : t({ id: "Furnitur", en: "Furniture" })}
                   </Badge>
                 </div>
-                <div className="flex items-center text-tertiary-earth text-sm mb-3">
+                <div className="flex items-center text-tertiary-earth text-body-small mb-3">
                   <MapPin className="w-4 h-4 mr-1" />
                   {item.location}
                 </div>
-                <p className="text-text-charcoal/70 leading-relaxed">
+                <p className="text-body-small text-text-charcoal/70">
                   {t(item.materials)}
                 </p>
               </CardContent>
@@ -102,7 +102,7 @@ export const Portfolio: React.FC = () => {
 
         {filteredItems.length === 0 && (
           <div className="text-center py-16">
-            <p className="text-tertiary-earth text-lg">
+            <p className="text-body-large text-tertiary-earth">
               {t({
                 id: "Portofolio untuk kategori ini segera hadir.",
                 en: "Portfolio for this category coming soon.",

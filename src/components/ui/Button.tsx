@@ -30,9 +30,9 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const sizes = {
-    sm: 'px-4 py-2 text-sm',
-    md: 'px-6 py-3 text-base',
-    lg: 'px-8 py-4 text-lg'
+    sm: "px-4 py-2 text-sm h-9",
+    md: "px-6 py-3 text-base h-11",
+    lg: "px-8 py-4 text-lg h-14",
   };
 
   return (
@@ -40,9 +40,21 @@ export const Button: React.FC<ButtonProps> = ({
       className={`${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`}
       {...props}
     >
-      {Icon && iconPosition === 'left' && <Icon className="w-5 h-5 mr-2" />}
+      {Icon && iconPosition === "left" && (
+        <Icon
+          className={`mr-2 ${
+            size === "sm" ? "w-4 h-4" : size === "lg" ? "w-6 h-6" : "w-5 h-5"
+          }`}
+        />
+      )}
       {children}
-      {Icon && iconPosition === 'right' && <Icon className="w-5 h-5 ml-2" />}
+      {Icon && iconPosition === "right" && (
+        <Icon
+          className={`ml-2 ${
+            size === "sm" ? "w-4 h-4" : size === "lg" ? "w-6 h-6" : "w-5 h-5"
+          }`}
+        />
+      )}
     </button>
   );
 };

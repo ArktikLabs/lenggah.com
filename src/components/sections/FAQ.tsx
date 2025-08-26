@@ -19,16 +19,19 @@ export const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-[#F5EFE6]">
+    <section id="faq" className="spacing-section bg-primary-ivory">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#222222] mb-6 font-serif">
-            {t({ id: 'Pertanyaan yang Sering Diajukan', en: 'Frequently Asked Questions' })}
-          </h2>
-          <p className="text-xl text-gray-600">
+          <h2 className="text-heading-1 text-text-charcoal mb-6">
             {t({
-              id: 'Temukan jawaban untuk pertanyaan umum seputar layanan kami.',
-              en: 'Find answers to common questions about our services.'
+              id: "Pertanyaan yang Sering Diajukan",
+              en: "Frequently Asked Questions",
+            })}
+          </h2>
+          <p className="text-body-large text-gray-600">
+            {t({
+              id: "Temukan jawaban untuk pertanyaan umum seputar layanan kami.",
+              en: "Find answers to common questions about our services.",
             })}
           </p>
         </div>
@@ -36,14 +39,17 @@ export const FAQ: React.FC = () => {
         <div className="space-y-4">
           {faqs.map((faq) => {
             const isOpen = openItems.has(faq.id);
-            
+
             return (
-              <div key={faq.id} className="bg-white rounded-xl shadow-md overflow-hidden">
+              <div
+                key={faq.id}
+                className="bg-white rounded-xl shadow-md overflow-hidden"
+              >
                 <button
                   onClick={() => toggleItem(faq.id)}
                   className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
                 >
-                  <h3 className="text-lg font-semibold text-[#222222] pr-4">
+                  <h3 className="text-heading-4 text-text-charcoal pr-4">
                     {t(faq.question)}
                   </h3>
                   {isOpen ? (
@@ -52,7 +58,7 @@ export const FAQ: React.FC = () => {
                     <ChevronDown className="w-5 h-5 text-[#6B4F3A] flex-shrink-0" />
                   )}
                 </button>
-                
+
                 {isOpen && (
                   <div className="px-6 pb-5 border-t border-gray-100">
                     <div className="pt-4">
