@@ -3,7 +3,8 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   metadataBase: new URL("https://lenggah.com"),
   title: {
-    default: "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
+    default:
+      "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
     template: "%s | Lenggah",
   },
   description:
@@ -33,12 +34,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://lenggah.com/en",
     siteName: "Lenggah",
-    title: "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
+    title:
+      "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
     description:
       "Lenggah Studio creates custom furniture & interiors focused on comfort. From concept to installation, curated materials & warranty included.",
     images: [
       {
-        url: "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        url: "https://lenggah.com/api/og?lang=en",
         width: 1200,
         height: 630,
         alt: "Lenggah — Custom Furniture & Interior Design",
@@ -47,12 +49,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
+    title:
+      "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
     description:
       "Lenggah Studio creates custom furniture & interiors focused on comfort. From concept to installation, curated materials & warranty included.",
-    images: [
-      "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    ],
+    images: ["https://lenggah.com/api/og?lang=en"],
   },
   robots: {
     index: true,
@@ -73,8 +74,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://lenggah.com/en",
     languages: {
-      'id': 'https://lenggah.com',
-      'en': 'https://lenggah.com/en',
+      id: "https://lenggah.com",
+      en: "https://lenggah.com/en",
     },
   },
 };

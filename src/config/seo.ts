@@ -2,18 +2,24 @@
 export const seoConfig = {
   siteUrl: "https://lenggah.com",
 
+  // Function to generate OG image URL
+  getOgImageUrl: (lang: "id" | "en" = "id") =>
+    `https://lenggah.com/api/og?lang=${lang}`,
+
   // Bilingual content
   content: {
     id: {
-      defaultTitle: "Lenggah — Furnitur & Desain Interior Kustom yang Nyaman dan Tahan Lama",
+      defaultTitle:
+        "Lenggah — Furnitur & Desain Interior Kustom yang Nyaman dan Tahan Lama",
       titleTemplate: "%s | Lenggah",
-      defaultDescription: "Studio Lenggah menghadirkan furnitur & interior kustom berfokus pada kenyamanan. Dari konsep hingga pemasangan, material terkurasi & garansi.",
+      defaultDescription:
+        "Studio Lenggah menghadirkan furnitur & interior kustom berfokus pada kenyamanan. Dari konsep hingga pemasangan, material terkurasi & garansi.",
       locale: "id_ID",
-      
+
       // Keywords for better SEO (Indonesian)
       keywords: [
         "furnitur kustom indonesia",
-        "desain interior indonesia", 
+        "desain interior indonesia",
         "kitchen set custom",
         "wardrobe custom",
         "mebel custom indonesia",
@@ -51,34 +57,45 @@ export const seoConfig = {
       // Page-specific SEO data (Indonesian)
       pages: {
         home: {
-          title: "Lenggah — Furnitur & Desain Interior Kustom Seluruh Indonesia",
-          description: "Studio Lenggah melayani seluruh Indonesia dengan furnitur & interior kustom berkualitas. Dari konsep hingga pemasangan dengan material terkurasi & garansi.",
+          title:
+            "Lenggah — Furnitur & Desain Interior Kustom Seluruh Indonesia",
+          description:
+            "Studio Lenggah melayani seluruh Indonesia dengan furnitur & interior kustom berkualitas. Dari konsep hingga pemasangan dengan material terkurasi & garansi.",
         },
         about: {
-          title: "Tentang Lenggah — Studio Furnitur & Interior Design Indonesia",
-          description: "Kenali lebih dekat Studio Lenggah, tim profesional yang melayani seluruh Indonesia dalam menciptakan furnitur dan interior design kustom berkualitas tinggi.",
+          title:
+            "Tentang Lenggah — Studio Furnitur & Interior Design Indonesia",
+          description:
+            "Kenali lebih dekat Studio Lenggah, tim profesional yang melayani seluruh Indonesia dalam menciptakan furnitur dan interior design kustom berkualitas tinggi.",
         },
         services: {
-          title: "Layanan — Custom Furniture & Interior Design Seluruh Indonesia",
-          description: "Layanan nasional Lenggah: konsultasi gratis, desain 3D, custom furniture, kitchen set, wardrobe, dan interior design dengan pengiriman ke seluruh Indonesia.",
+          title:
+            "Layanan — Custom Furniture & Interior Design Seluruh Indonesia",
+          description:
+            "Layanan nasional Lenggah: konsultasi gratis, desain 3D, custom furniture, kitchen set, wardrobe, dan interior design dengan pengiriman ke seluruh Indonesia.",
         },
         portfolio: {
-          title: "Portfolio — Proyek Furnitur & Interior Design Terbaik Indonesia",
-          description: "Lihat koleksi proyek terbaik Lenggah di seluruh Indonesia: ruang keluarga, kitchen set, wardrobe, dan interior design untuk hunian maupun komersial.",
+          title:
+            "Portfolio — Proyek Furnitur & Interior Design Terbaik Indonesia",
+          description:
+            "Lihat koleksi proyek terbaik Lenggah di seluruh Indonesia: ruang keluarga, kitchen set, wardrobe, dan interior design untuk hunian maupun komersial.",
         },
         contact: {
           title: "Kontak — Hubungi Lenggah untuk Konsultasi Gratis",
-          description: "Konsultasi gratis dengan tim Lenggah. Hubungi kami untuk mewujudkan furnitur dan interior design impian Anda. Melayani seluruh Indonesia.",
+          description:
+            "Konsultasi gratis dengan tim Lenggah. Hubungi kami untuk mewujudkan furnitur dan interior design impian Anda. Melayani seluruh Indonesia.",
         },
       },
     },
-    
+
     en: {
-      defaultTitle: "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
+      defaultTitle:
+        "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
       titleTemplate: "%s | Lenggah",
-      defaultDescription: "Lenggah Studio creates custom furniture & interiors focused on comfort. From concept to installation, curated materials & warranty included.",
+      defaultDescription:
+        "Lenggah Studio creates custom furniture & interiors focused on comfort. From concept to installation, curated materials & warranty included.",
       locale: "en_US",
-      
+
       // Keywords for better SEO (English)
       keywords: [
         "custom furniture indonesia",
@@ -120,24 +137,33 @@ export const seoConfig = {
       // Page-specific SEO data (English)
       pages: {
         home: {
-          title: "Lenggah — Custom Furniture & Interior Design Across Indonesia",
-          description: "Lenggah Studio serves all of Indonesia with quality custom furniture & interiors. From concept to installation with curated materials & warranty.",
+          title:
+            "Lenggah — Custom Furniture & Interior Design Across Indonesia",
+          description:
+            "Lenggah Studio serves all of Indonesia with quality custom furniture & interiors. From concept to installation with curated materials & warranty.",
         },
         about: {
-          title: "About Lenggah — Indonesia's Furniture & Interior Design Studio",
-          description: "Get to know Lenggah Studio, a professional team serving all of Indonesia in creating high-quality custom furniture and interior design.",
+          title:
+            "About Lenggah — Indonesia's Furniture & Interior Design Studio",
+          description:
+            "Get to know Lenggah Studio, a professional team serving all of Indonesia in creating high-quality custom furniture and interior design.",
         },
         services: {
-          title: "Services — Custom Furniture & Interior Design Across Indonesia",
-          description: "Lenggah's nationwide services: free consultation, 3D design, custom furniture, kitchen sets, wardrobes, and interior design with delivery across Indonesia.",
+          title:
+            "Services — Custom Furniture & Interior Design Across Indonesia",
+          description:
+            "Lenggah's nationwide services: free consultation, 3D design, custom furniture, kitchen sets, wardrobes, and interior design with delivery across Indonesia.",
         },
         portfolio: {
-          title: "Portfolio — Indonesia's Best Furniture & Interior Design Projects",
-          description: "View Lenggah's best project collection across Indonesia: living rooms, kitchen sets, wardrobes, and interior design for residential and commercial spaces.",
+          title:
+            "Portfolio — Indonesia's Best Furniture & Interior Design Projects",
+          description:
+            "View Lenggah's best project collection across Indonesia: living rooms, kitchen sets, wardrobes, and interior design for residential and commercial spaces.",
         },
         contact: {
           title: "Contact — Reach Lenggah for Free Consultation",
-          description: "Free consultation with Lenggah's team. Contact us to realize your dream furniture and interior design. Serving all of Indonesia.",
+          description:
+            "Free consultation with Lenggah's team. Contact us to realize your dream furniture and interior design. Serving all of Indonesia.",
         },
       },
     },
