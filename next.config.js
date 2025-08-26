@@ -4,11 +4,6 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
 
-  // SEO and Performance optimizations
-  experimental: {
-    optimizeCss: true,
-  },
-
   images: {
     remotePatterns: [
       {
