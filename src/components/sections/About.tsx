@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { useLanguage } from '../../hooks/useLanguage';
 
 export const About: React.FC = () => {
@@ -35,12 +36,16 @@ export const About: React.FC = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl">
-              <img
-                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
+            <div className="relative overflow-hidden rounded-2xl h-96">
+              <Image
+                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Lenggah Workshop"
-                className="w-full h-96 object-cover"
-                loading="lazy"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+                priority={false}
+                placeholder="blur"
+                blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#6B4F3A]/20 to-transparent"></div>
             </div>

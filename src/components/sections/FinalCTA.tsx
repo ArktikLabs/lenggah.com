@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { useLanguage } from '../../hooks/useLanguage';
@@ -23,13 +24,20 @@ export const FinalCTA: React.FC = () => {
 
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(107, 79, 58, 0.9), rgba(60, 110, 71, 0.9)), url(https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1920)',
-        }}
-      />
+      {/* Background via next/image with gradient overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Textured wood and greenery background"
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority={false}
+          placeholder="blur"
+          blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#6B4F3A]/90 to-[#3C6E47]/90" />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
