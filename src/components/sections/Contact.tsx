@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Phone, Mail, Clock, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, Send, Building2 } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { Card, CardContent } from '../ui/Card';
 import { useLanguage } from '../../hooks/useLanguage';
@@ -182,6 +182,33 @@ export const Contact: React.FC = () => {
                       {t({
                         id: "Jakarta & Sekitarnya",
                         en: "Jakarta & Surrounding Areas",
+                      })}
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
+                    <Building2 className="w-6 h-6 text-primary-ivory" />
+                  </div>
+                  <div>
+                    <h3 className="text-heading-4 text-text-charcoal">
+                      {t({ id: "Workshop", en: "Workshop" })}
+                    </h3>
+                    <p className="text-body-small text-text-charcoal/70">
+                      {t({
+                        id: "Jl. Kebon Jeruk Raya No. 123, Jakarta Barat 11530",
+                        en: "Jl. Kebon Jeruk Raya No. 123, West Jakarta 11530",
+                      })}
+                    </p>
+                    <p className="text-body-small text-accent-forest mt-1">
+                      {t({
+                        id: "Kunjungi dengan janji temu",
+                        en: "Visit by appointment",
                       })}
                     </p>
                   </div>
