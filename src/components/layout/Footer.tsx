@@ -22,11 +22,11 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-text-charcoal text-primary-ivory py-16">
+    <footer className="bg-text-charcoal text-primary-ivory py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8">
           {/* Brand */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <h3 className="text-2xl font-bold font-serif mb-4">Lenggah</h3>
             <p className="text-primary-ivory/80 leading-relaxed mb-6">
               {t({
@@ -127,9 +127,9 @@ export const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-start hover:text-primary-ivory transition-colors group"
               >
-                <MapPin className="w-5 h-5 mr-3 text-accent-forest mt-0.5 group-hover:text-accent-forest/80" />
+                <MapPin className="w-5 h-5 mr-3 text-accent-forest mt-0.5 flex-shrink-0 group-hover:text-accent-forest/80" />
                 <div className="text-primary-ivory/80 group-hover:text-primary-ivory">
-                  <div className="font-medium">
+                  <div className="font-medium mb-1">
                     {t({ id: "Workshop", en: "Workshop" })}
                   </div>
                   <div className="text-sm leading-relaxed">
@@ -145,9 +145,9 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-tertiary-earth/30 mt-12 pt-8">
+        <div className="border-t border-tertiary-earth/30 mt-12 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-primary-ivory/80 text-center md:text-left">
+            <p className="text-primary-ivory/80 text-center md:text-left text-sm">
               © {currentYear} Lenggah.{" "}
               {t({
                 id: "Seluruh hak cipta dilindungi.",
