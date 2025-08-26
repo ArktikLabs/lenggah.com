@@ -1,6 +1,7 @@
 import './globals.css';
 import React from 'react';
 import { Inter, Playfair_Display } from 'next/font/google';
+import { Providers } from "./providers";
 
 export const metadata = {
   metadataBase: new URL("https://lenggah.com"),
@@ -104,7 +105,11 @@ const playfair = Playfair_Display({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <body className={`${inter.variable} ${playfair.variable} antialiased font-sans`}>{children}</body>
+      <body
+        className={`${inter.variable} ${playfair.variable} antialiased font-sans`}
+      >
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

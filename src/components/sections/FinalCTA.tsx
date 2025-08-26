@@ -48,11 +48,16 @@ export const FinalCTA: React.FC = () => {
         </div>
         <div className="relative z-10 spacing-container text-center">
           <h2 className="text-display text-white mb-6">
-            Siap "Lenggah" di Ruang yang Nyaman?
+            {t({
+              id: 'Siap "Lenggah" di Ruang yang Nyaman?',
+              en: 'Ready to "Lenggah" in a Comfortable Space?',
+            })}
           </h2>
           <p className="text-body-large text-gray-200 mb-10 max-w-2xl mx-auto">
-            Mulai konsultasi gratis hari ini dan wujudkan ruang impian Anda
-            bersama tim ahli kami.
+            {t({
+              id: "Mulai konsultasi gratis hari ini dan wujudkan ruang impian Anda bersama tim ahli kami.",
+              en: "Start a free consultation today and realize your dream space with our expert team.",
+            })}
           </p>
           <Button
             size="lg"
@@ -61,7 +66,7 @@ export const FinalCTA: React.FC = () => {
             onClick={scrollToContact}
             className="shadow-xl"
           >
-            Konsultasi Gratis
+            {t({ id: "Konsultasi Gratis", en: "Free Consultation" })}
           </Button>
           <div className="absolute -top-10 -left-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
           <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-accent-forest/20 rounded-full blur-xl"></div>
