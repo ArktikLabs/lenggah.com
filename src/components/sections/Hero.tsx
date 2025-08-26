@@ -89,7 +89,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Philosophy Section */}
-        <div className="mt-16 p-6 bg-white/10 backdrop-blur-sm rounded-2xl max-w-2xl mx-auto">
+        <div className="mt-16 mb-12 md:mb-0 p-6 bg-white/10 backdrop-blur-sm rounded-2xl max-w-2xl mx-auto">
           <p className="text-body-large text-white">{t(heroData.philosophy)}</p>
         </div>
 
