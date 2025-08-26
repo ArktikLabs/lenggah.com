@@ -41,7 +41,7 @@ export const generateServiceStructuredData = () => {
       name: "Lenggah Studio",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Yogyakarta",
+        addressLocality: "Jakarta Timur",
         addressCountry: "ID",
       },
     },
@@ -87,20 +87,40 @@ export const generateServiceStructuredData = () => {
     },
     areaServed: [
       {
+        "@type": "Country",
+        name: "Indonesia",
+      },
+      {
+        "@type": "Place",
+        name: "Jakarta",
+      },
+      {
+        "@type": "Place",
+        name: "Surabaya",
+      },
+      {
+        "@type": "Place",
+        name: "Bandung",
+      },
+      {
+        "@type": "Place",
+        name: "Medan",
+      },
+      {
+        "@type": "Place",
+        name: "Semarang",
+      },
+      {
+        "@type": "Place",
+        name: "Makassar",
+      },
+      {
         "@type": "Place",
         name: "Yogyakarta",
       },
       {
         "@type": "Place",
-        name: "Solo",
-      },
-      {
-        "@type": "Place",
-        name: "Sleman",
-      },
-      {
-        "@type": "Place",
-        name: "Bantul",
+        name: "Denpasar",
       },
     ],
   };
@@ -137,29 +157,25 @@ export const generateOrganizationStructuredData = () => {
     logo: "https://lenggah.com/favicon.svg",
     image:
       "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    telephone: "+62-XXX-XXXX-XXXX",
+    telephone: "+62 813-8628-8099",
     foundingDate: "2020",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Jl. Example St. 123",
-      addressLocality: "Yogyakarta",
-      addressRegion: "DI Yogyakarta",
-      postalCode: "55000",
+      streetAddress: "Jl. Munggang Gg. H. Guntong RT 10/RW 4, Kel. Balekambang",
+      addressLocality: "Kramat Jati",
+      addressRegion: "Jakarta Timur",
+      postalCode: "13530",
       addressCountry: "ID",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "-7.797068",
-      longitude: "110.370529",
+      latitude: "-6.2791259",
+      longitude: "106.849637",
     },
-    sameAs: [
-      "https://instagram.com/lenggah",
-      "https://facebook.com/lenggah",
-      "https://whatsapp.com/lenggah",
-    ],
+    sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+62-XXX-XXXX-XXXX",
+      telephone: "+62 813-8628-8099",
       contactType: "customer service",
       availableLanguage: ["Indonesian", "English"],
     },
@@ -172,20 +188,44 @@ export const generateOrganizationStructuredData = () => {
     ],
     areaServed: [
       {
+        "@type": "Country",
+        name: "Indonesia",
+      },
+      {
+        "@type": "Place",
+        name: "Jakarta",
+      },
+      {
+        "@type": "Place",
+        name: "Surabaya",
+      },
+      {
+        "@type": "Place",
+        name: "Bandung",
+      },
+      {
+        "@type": "Place",
+        name: "Medan",
+      },
+      {
+        "@type": "Place",
+        name: "Semarang",
+      },
+      {
+        "@type": "Place",
+        name: "Makassar",
+      },
+      {
         "@type": "Place",
         name: "Yogyakarta",
       },
       {
         "@type": "Place",
-        name: "Solo",
+        name: "Denpasar",
       },
       {
         "@type": "Place",
-        name: "Sleman",
-      },
-      {
-        "@type": "Place",
-        name: "Bantul",
+        name: "Batam",
       },
     ],
     hasOfferCatalog: {

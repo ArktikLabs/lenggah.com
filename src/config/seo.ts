@@ -10,13 +10,15 @@ export const seoConfig = {
   // Keywords for better SEO
   keywords: [
     // Primary keywords (Indonesian)
-    "furnitur kustom yogyakarta",
-    "desain interior yogyakarta",
+    "furnitur kustom indonesia",
+    "desain interior indonesia",
     "kitchen set custom",
-    "wardrobe custom yogyakarta",
-    "mebel custom yogyakarta",
-    "interior design yogyakarta",
-    "furniture maker yogyakarta",
+    "wardrobe custom",
+    "mebel custom indonesia",
+    "interior design indonesia",
+    "furniture maker indonesia",
+    "furnitur kustom jakarta",
+    "desain interior jakarta",
 
     // Secondary keywords
     "furnitur kayu",
@@ -26,18 +28,26 @@ export const seoConfig = {
     "furnitur rumah custom",
     "interior designer",
     "furniture design",
+    "mebel berkualitas",
+    "furniture online indonesia",
 
     // Location-based keywords
-    "furnitur yogyakarta",
-    "interior design solo",
-    "furniture sleman",
-    "custom furniture bantul",
-    "mebel jogja",
+    "furnitur jakarta",
+    "interior design surabaya",
+    "furniture bandung",
+    "custom furniture medan",
+    "mebel semarang",
+    "furnitur makassar",
+    "interior design yogyakarta",
+    "furniture solo",
+    "mebel denpasar",
+    "furnitur batam",
+    "furnitur kramat jati",
 
     // Service-based keywords
     "konsultasi interior design",
     "jasa pembuatan furniture",
-    "tukang kayu yogyakarta",
+    "tukang kayu jakarta timur",
     "workshop furniture",
     "furniture workshop yogyakarta",
   ],
@@ -46,7 +56,7 @@ export const seoConfig = {
   social: {
     instagram: "https://instagram.com/lenggah",
     facebook: "https://facebook.com/lenggah",
-    whatsapp: "https://wa.me/62XXXXXXXXXX",
+    whatsapp: "https://wa.me/6281386288099",
     email: "hello@lenggah.com",
   },
 
@@ -56,28 +66,42 @@ export const seoConfig = {
     fullName: "Lenggah Studio",
     description:
       "Studio Lenggah menghadirkan furnitur & interior kustom berfokus pada kenyamanan. Dari konsep hingga pemasangan, material terkurasi & garansi.",
-    phone: "+62-XXX-XXXX-XXXX",
+    phone: "+62 813-8628-8099",
     email: "hello@lenggah.com",
     address: {
-      street: "Jl. Example St. 123",
-      city: "Yogyakarta",
-      region: "DI Yogyakarta",
-      postalCode: "55000",
+      street: "Jl. Munggang Gg. H. Guntong RT 10/RW 4, Kel. Balekambang",
+      city: "Jakarta Timur",
+      region: "DKI Jakarta",
+      postalCode: "13530",
       country: "Indonesia",
       countryCode: "ID",
     },
     geo: {
-      latitude: -7.797068,
-      longitude: 110.370529,
+      latitude: -6.2791259,
+      longitude: 106.849637,
     },
     foundingYear: 2020,
     serviceAreas: [
+      "Seluruh Indonesia",
+      "Jakarta",
+      "Surabaya",
+      "Bandung",
+      "Medan",
+      "Semarang",
+      "Makassar",
+      "Palembang",
+      "Tangerang",
+      "Depok",
+      "Bekasi",
+      "Bogor",
+      "Batam",
+      "Pekanbaru",
+      "Bandar Lampung",
+      "Malang",
       "Yogyakarta",
       "Solo",
-      "Sleman",
-      "Bantul",
-      "Klaten",
-      "Sukoharjo",
+      "Denpasar",
+      "Samarinda",
     ],
   },
 
@@ -92,30 +116,29 @@ export const seoConfig = {
   // Page-specific SEO data
   pages: {
     home: {
-      title:
-        "Lenggah — Furnitur & Desain Interior Kustom yang Nyaman dan Tahan Lama",
+      title: "Lenggah — Furnitur & Desain Interior Kustom Seluruh Indonesia",
       description:
-        "Studio Lenggah menghadirkan furnitur & interior kustom berfokus pada kenyamanan. Dari konsep hingga pemasangan, material terkurasi & garansi.",
+        "Studio Lenggah melayani seluruh Indonesia dengan furnitur & interior kustom berkualitas. Dari konsep hingga pemasangan dengan material terkurasi & garansi.",
     },
     about: {
-      title: "Tentang Lenggah — Studio Furnitur & Interior Design Yogyakarta",
+      title: "Tentang Lenggah — Studio Furnitur & Interior Design Indonesia",
       description:
-        "Kenali lebih dekat Studio Lenggah, tim profesional yang berpengalaman dalam menciptakan furnitur dan interior design kustom di Yogyakarta.",
+        "Kenali lebih dekat Studio Lenggah, tim profesional yang melayani seluruh Indonesia dalam menciptakan furnitur dan interior design kustom berkualitas tinggi.",
     },
     services: {
-      title: "Layanan — Custom Furniture & Interior Design Yogyakarta",
+      title: "Layanan — Custom Furniture & Interior Design Seluruh Indonesia",
       description:
-        "Layanan lengkap Lenggah: konsultasi gratis, desain 3D, custom furniture, kitchen set, wardrobe, dan interior design dengan garansi.",
+        "Layanan nasional Lenggah: konsultasi gratis, desain 3D, custom furniture, kitchen set, wardrobe, dan interior design dengan pengiriman ke seluruh Indonesia.",
     },
     portfolio: {
-      title: "Portfolio — Proyek Furnitur & Interior Design Terbaik",
+      title: "Portfolio — Proyek Furnitur & Interior Design Terbaik Indonesia",
       description:
-        "Lihat koleksi proyek terbaik Lenggah: ruang keluarga, kitchen set, wardrobe, dan interior design untuk hunian maupun komersial.",
+        "Lihat koleksi proyek terbaik Lenggah di seluruh Indonesia: ruang keluarga, kitchen set, wardrobe, dan interior design untuk hunian maupun komersial.",
     },
     contact: {
       title: "Kontak — Hubungi Lenggah untuk Konsultasi Gratis",
       description:
-        "Konsultasi gratis dengan tim Lenggah. Hubungi kami untuk mewujudkan furnitur dan interior design impian Anda di Yogyakarta.",
+        "Konsultasi gratis dengan tim Lenggah. Hubungi kami untuk mewujudkan furnitur dan interior design impian Anda. Melayani seluruh Indonesia.",
     },
   },
 };

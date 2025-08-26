@@ -40,10 +40,10 @@ export const SEO: React.FC<SEOProps> = ({
 
       {/* Additional meta tags for better SEO */}
       <meta name="format-detection" content="telephone=no" />
-      <meta name="geo.region" content="ID-YO" />
-      <meta name="geo.placename" content="Yogyakarta" />
-      <meta name="geo.position" content="-7.797068;110.370529" />
-      <meta name="ICBM" content="-7.797068, 110.370529" />
+      <meta name="geo.region" content="ID-JK" />
+      <meta name="geo.placename" content="Jakarta Timur" />
+      <meta name="geo.position" content="-6.2791259;106.849637" />
+      <meta name="ICBM" content="-6.2791259, 106.849637" />
     </>
   );
 };
