@@ -93,8 +93,8 @@ export const Hero: React.FC = () => {
           <p className="text-body-large text-white">{t(heroData.philosophy)}</p>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="mt-12 flex justify-center">
+        {/* Scroll Indicator - Hidden on mobile */}
+        <div className="mt-12 hidden md:flex justify-center">
           <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white rounded-full mt-2 animate-bounce"></div>
           </div>
