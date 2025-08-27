@@ -1,0 +1,11 @@
+# Vercel ignore file for static export
+.next/
+node_modules/
+.git/
+.DS_Store
+*.log
+.env*
+.vercel
+create-icons.sh
+download-images.sh
+vercel-old.json
