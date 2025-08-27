@@ -129,9 +129,6 @@ export const Footer: React.FC = () => {
               >
                 <MapPin className="w-5 h-5 mr-3 text-accent-forest mt-0.5 flex-shrink-0 group-hover:text-accent-forest/80" />
                 <div className="text-primary-ivory/80 group-hover:text-primary-ivory">
-                  <div className="font-medium mb-1">
-                    {t({ id: "Workshop", en: "Workshop" })}
-                  </div>
                   <div className="text-sm leading-relaxed">
                     Jl. Munggang Gg. H. Guntong
                     <br />

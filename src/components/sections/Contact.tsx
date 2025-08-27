@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Phone, Mail, Clock, MapPin, Send, Building2 } from "lucide-react";
+import { Phone, Mail, Clock, Send, Building2 } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Card, CardContent } from "../ui/Card";
 import { useLanguage } from "../../hooks/useLanguage";
@@ -220,6 +220,32 @@ ${t({
 
             <Card>
               <CardContent className="p-6">
+                <div className="flex items-start mb-4">
+                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
+                    <Building2 className="w-6 h-6 text-primary-ivory" />
+                  </div>
+                  <div>
+                    <h3 className="text-heading-4 text-text-charcoal">
+                      {t({ id: "Workshop", en: "Workshop" })}
+                    </h3>
+                    <div className="text-body-small text-text-charcoal/70">
+                      <p>Jl. Munggang Gg. H. Guntong</p>
+                      <p>RT 10/RW 4, Kel. Balekambang</p>
+                      <p>Jakarta Timur 13530</p>
+                    </div>
+                    <p className="text-body-small text-accent-forest mt-1">
+                      {t({
+                        id: "Kunjungi dengan janji temu",
+                        en: "Visit by appointment",
+                      })}
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
                     <Clock className="w-6 h-6 text-primary-ivory" />
@@ -232,54 +258,6 @@ ${t({
                       {t({
                         id: "Senin - Sabtu: 08.00 - 17.00",
                         en: "Monday - Saturday: 08.00 - 17.00",
-                      })}
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
-                    <MapPin className="w-6 h-6 text-primary-ivory" />
-                  </div>
-                  <div>
-                    <h3 className="text-heading-4 text-text-charcoal">
-                      {t({ id: "Area Layanan", en: "Service Area" })}
-                    </h3>
-                    <p className="text-body-small text-text-charcoal/70">
-                      {t({
-                        id: "Jakarta & Sekitarnya",
-                        en: "Jakarta & Surrounding Areas",
-                      })}
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
-                    <Building2 className="w-6 h-6 text-primary-ivory" />
-                  </div>
-                  <div>
-                    <h3 className="text-heading-4 text-text-charcoal">
-                      {t({ id: "Workshop", en: "Workshop" })}
-                    </h3>
-                    <p className="text-body-small text-text-charcoal/70">
-                      {t({
-                        id: "Jl. Munggang Gg. H. Guntong RT 10/RW 4, Kel. Balekambang, Jakarta Timur 13530",
-                        en: "Jl. Munggang Gg. H. Guntong RT 10/RW 4, Kel. Balekambang, East Jakarta 13530",
-                      })}
-                    </p>
-                    <p className="text-body-small text-accent-forest mt-1">
-                      {t({
-                        id: "Kunjungi dengan janji temu",
-                        en: "Visit by appointment",
                       })}
                     </p>
                   </div>
