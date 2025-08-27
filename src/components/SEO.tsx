@@ -34,10 +34,6 @@ export const SEO: React.FC<SEOProps> = ({
         />
       )}
 
-      {/* Preconnect to external domains for faster loading */}
-      <link rel="preconnect" href="https://images.pexels.com" />
-      <link rel="dns-prefetch" href="https://images.pexels.com" />
-
       {/* Additional meta tags for better SEO */}
       <meta name="format-detection" content="telephone=no" />
       <meta name="geo.region" content="ID-JK" />

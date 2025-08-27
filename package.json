@@ -1,12 +1,16 @@
 {
-  "name": "next-react-typescript-starter",
+  "name": "lenggah-com",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build",
     "start": "next start",
+    "serve": "npx serve out",
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel",
     "lint": "eslint ."
   },
   "dependencies": {

@@ -4,7 +4,7 @@ export const seoConfig = {
 
   // Function to generate OG image URL
   getOgImageUrl: (lang: "id" | "en" = "id") =>
-    `https://lenggah.com/api/og?lang=${lang}`,
+    `https://lenggah.com/og/og-${lang}.jpg`,
 
   // Bilingual content
   content: {
@@ -226,8 +226,7 @@ export const seoConfig = {
 
   // Image settings
   images: {
-    defaultOg:
-      "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    defaultOg: "/images/hero-1648776.jpg",
     logo: "/favicon.svg",
     appleTouchIcon: "/apple-touch-icon.png",
   },

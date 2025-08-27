@@ -3,13 +3,12 @@ export const preloadCriticalImages = () => {
   if (typeof window !== "undefined") {
     // Preload hero image
     const heroImage = new Image();
-    heroImage.src =
-      "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1920";
+    heroImage.src = "/images/hero-1648776.jpg";
 
     // Preload other critical images
     const criticalImages = [
-      "https://images.pexels.com/photos/1648768/pexels-photo-1648768.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/images/portfolio-1648768.jpg",
+      "/images/portfolio-2724749.jpg",
     ];
 
     criticalImages.forEach((src) => {

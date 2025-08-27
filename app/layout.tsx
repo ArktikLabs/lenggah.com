@@ -43,7 +43,7 @@ export const metadata = {
       "Studio Lenggah menghadirkan furnitur & interior kustom berfokus pada kenyamanan. Dari konsep hingga pemasangan, material terkurasi & garansi.",
     images: [
       {
-        url: "https://lenggah.com/api/og?lang=id",
+        url: "https://lenggah.com/og/og-id.png",
         width: 1200,
         height: 630,
         alt: "Lenggah — Furnitur & Desain Interior Kustom",
@@ -56,7 +56,7 @@ export const metadata = {
       "Lenggah — Furnitur & Desain Interior Kustom yang Nyaman dan Tahan Lama",
     description:
       "Studio Lenggah menghadirkan furnitur & interior kustom berfokus pada kenyamanan. Dari konsep hingga pemasangan, material terkurasi & garansi.",
-    images: ["https://lenggah.com/api/og?lang=id"],
+    images: ["https://lenggah.com/og/og-id.png"],
   },
   robots: {
     index: true,

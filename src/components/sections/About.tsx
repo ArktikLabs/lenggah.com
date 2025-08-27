@@ -49,7 +49,7 @@ export const About: React.FC = () => {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl h-96">
               <Image
-                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="/images/about-1571460.jpg"
                 alt="Lenggah Workshop"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

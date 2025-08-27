@@ -20,7 +20,7 @@ export const portfolioItems: PortfolioItem[] = [
       en: "Teak wood, neutral fabric, hidden storage",
     },
     image:
-      "https://images.pexels.com/photos/1648768/pexels-photo-1648768.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/images/portfolio-1648768.jpg",
   },
   {
     id: "2",
@@ -35,7 +35,7 @@ export const portfolioItems: PortfolioItem[] = [
       en: "Mahogany wood, white granite, quality hardware",
     },
     image:
-      "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/images/portfolio-2724749.jpg",
   },
   {
     id: "3",
@@ -50,7 +50,7 @@ export const portfolioItems: PortfolioItem[] = [
       en: "Trembesi wood, natural finish, antique mirror",
     },
     image:
-      "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/images/portfolio-1571463.jpg",
   },
   {
     id: "4",
@@ -65,7 +65,7 @@ export const portfolioItems: PortfolioItem[] = [
       en: "Recycled wood, rattan, industrial lighting",
     },
     image:
-      "https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/images/portfolio-887827.jpg",
   },
   {
     id: "5",
@@ -80,7 +80,7 @@ export const portfolioItems: PortfolioItem[] = [
       en: "Sonokeling wood, matte finish, ergonomic chairs",
     },
     image:
-      "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/images/portfolio-1080721.jpg",
   },
   {
     id: "6",
@@ -95,7 +95,7 @@ export const portfolioItems: PortfolioItem[] = [
       en: "Pine wood, modular shelving, LED lighting",
     },
     image:
-      "https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/images/portfolio-667838.jpg",
   },
 ];
 

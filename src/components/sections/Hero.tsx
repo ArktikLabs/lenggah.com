@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
       {/* Background Image via next/image for better LCP */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="/images/hero-1648776.jpg"
           alt="Warm interior furniture background"
           fill
           priority

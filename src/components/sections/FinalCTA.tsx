@@ -35,7 +35,7 @@ export const FinalCTA: React.FC = () => {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/images/cta-1571459.jpg"
             alt="Textured wood and greenery background"
             fill
             sizes="100vw"
@@ -80,7 +80,7 @@ export const FinalCTA: React.FC = () => {
       {/* Background via next/image with gradient overlay */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="/images/cta-1571459.jpg"
           alt="Textured wood and greenery background"
           fill
           sizes="100vw"

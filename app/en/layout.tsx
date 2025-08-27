@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "Lenggah Studio creates custom furniture & interiors focused on comfort. From concept to installation, curated materials & warranty included.",
     images: [
       {
-        url: "https://lenggah.com/api/og?lang=en",
+        url: "https://lenggah.com/og/og-en.png",
         width: 1200,
         height: 630,
         alt: "Lenggah — Custom Furniture & Interior Design",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
       "Lenggah — Custom Furniture & Interior Design that's Comfortable and Durable",
     description:
       "Lenggah Studio creates custom furniture & interiors focused on comfort. From concept to installation, curated materials & warranty included.",
-    images: ["https://lenggah.com/api/og?lang=en"],
+    images: ["https://lenggah.com/og/og-en.png"],
   },
   robots: {
     index: true,
