@@ -220,27 +220,34 @@ ${t({
 
             <Card>
               <CardContent className="p-6">
-                <div className="flex items-start mb-4">
-                  <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4">
-                    <Building2 className="w-6 h-6 text-primary-ivory" />
-                  </div>
-                  <div>
-                    <h3 className="text-heading-4 text-text-charcoal">
-                      {t({ id: "Workshop", en: "Workshop" })}
-                    </h3>
-                    <div className="text-body-small text-text-charcoal/70">
-                      <p>Jl. Munggang Gg. H. Guntong</p>
-                      <p>RT 10/RW 4, Kel. Balekambang</p>
-                      <p>Jakarta Timur 13530</p>
+                <a
+                  href="https://maps.google.com/?q=-6.2791259,106.849637"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:bg-secondary-wood/10 rounded-lg p-2 -m-2 transition-colors group"
+                >
+                  <div className="flex items-start mb-4">
+                    <div className="w-12 h-12 bg-accent-forest rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-forest/80 transition-colors">
+                      <Building2 className="w-6 h-6 text-primary-ivory" />
                     </div>
-                    <p className="text-body-small text-accent-forest mt-1">
-                      {t({
-                        id: "Kunjungi dengan janji temu",
-                        en: "Visit by appointment",
-                      })}
-                    </p>
+                    <div>
+                      <h3 className="text-heading-4 text-text-charcoal group-hover:text-accent-forest transition-colors">
+                        {t({ id: "Workshop", en: "Workshop" })}
+                      </h3>
+                      <div className="text-body-small text-text-charcoal/70 group-hover:text-text-charcoal transition-colors">
+                        <p>Jl. Munggang Gg. H. Guntong</p>
+                        <p>RT 10/RW 4, Kel. Balekambang</p>
+                        <p>Jakarta Timur 13530</p>
+                      </div>
+                      <p className="text-body-small text-accent-forest mt-1 group-hover:underline">
+                        {t({
+                          id: "Kunjungi dengan janji temu",
+                          en: "Visit by appointment",
+                        })}
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </CardContent>
             </Card>
 
